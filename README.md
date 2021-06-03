@@ -1,22 +1,23 @@
+
 # Project02_EF_ASP.NET_MVC
 
+  
+  
 
-# فكرة المشروع 
+# The project contain the following requirement
 
-بناء مشروع ASP.NET MVC قائم على فكرة من اختيارك ويكون قادر على التعامل مع بيانات حقيقية باستخدام Entity Framework Core 
+- Database Name (furnituerstore)
 
-# متطلبات المشروع
-- استخدام Entity Framework Core وربطها بقاعدة بيانات Database
-    - استخدام Migration وCodeFirst Approach
-    - إنشاء على الأقل ٤ جداول
-    - إضافة بيانات مبدئية على قاعدة البيانات `Seeding`
-    - استخدام مفهوم العلاقات بين الجداول
-    - عمل fetch استرجاع للبيانات
-# إضافة | Bouns  
-- عمل ٢ أو أكثر من وظائف CRUD على المشروع
-- التعامل مع React في المشروع بأستخدام الـ API
+- Relation one to one and one to many
 
+- Adding seeding
 
-# التسليم
+- 5 table
 
-يوم الأحد June 6th، الساعة 9:00 am
+- fetch to infromation
+
+  
+
+# Demo
+
+<img  src="https://k.top4top.io/p_1980mx2m61.gif"/>
