@@ -14,7 +14,7 @@
         "outputPath": "/Users/taj/Desktop/Tuwaiq/ASP.NET/Project02_EF_ASP.NET_MVC/Project02_EF_MVC/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/taj/.config/NuGet/NuGet.Config"
+          "/Users/taj/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -37,6 +37,26 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

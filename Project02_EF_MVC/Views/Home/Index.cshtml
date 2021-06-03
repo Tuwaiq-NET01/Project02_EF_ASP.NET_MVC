@@ -1,8 +1,104 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿
+@{
+    ViewData["Title"] = "Bootcamp";
+    List<Student> students = (List<Student>)ViewBag.students;
+    List<Teacher> teachers = (List<Teacher>)ViewBag.teachers;
+    List<Course> courses = (List<Course>)ViewBag.courses;
+    List<StudentsCourses> StudentsCourses = (List<StudentsCourses>)ViewBag.StudentsCourses;
+
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>Bootcamp Teachers</h2>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Course Id</th>
+        </tr>
+    </thead>
+    @{
+        foreach (var t in teachers)
+        {
+            <tbody>
+                <tr>
+
+                    <td>@t.Id</td>
+                    <td>@t.FirstName</td>
+                    <td>@t.LastName</td>
+                    <td>@t.Course.Id</td>
+                </tr>
+            </tbody>
+        }
+    }
+</table>
+
+<h2>Bootcamp Students</h2>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+        </tr>
+    </thead>
+    @{
+        foreach (var s in students)
+        {
+            <tbody>
+                <tr>
+
+                    <td>@s.Id</td>
+                    <td>@s.FirstName</td>
+                    <td>@s.LastName</td>
+                </tr>
+            </tbody>
+        }
+    }
+</table>
+
+<h2>Bootcamp Courses</h2>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+        </tr>
+    </thead>
+    @{
+        foreach (var c in courses)
+        {
+            <tbody>
+                <tr>
+                    <td>@c.Id</td>
+                    <td>@c.Title.</td>
+                </tr>
+            </tbody>
+        }
+    }
+</table>
+
+
+<h2>Students Enrollment</h2>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Student Id</th>
+            <th scope="col">Course Id</th>
+        </tr>
+    </thead>
+    @{
+        foreach (var e in StudentsCourses)
+        {
+            <tbody>
+                <tr>
+                    <td>@e.Id</td>
+                    <td>@e.StudentId</td>
+                    <td>@e.CourseId</td>
+                </tr>
+            </tbody>
+        }
+    }
+</table>
