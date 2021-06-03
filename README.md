@@ -1,3 +1,5 @@
+<div dir="rtl">  
+    
 # Project02_EF_ASP.NET_MVC
 
 
