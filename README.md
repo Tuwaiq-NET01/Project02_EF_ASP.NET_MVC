@@ -14,7 +14,7 @@
 
 - 5 table
 
-- fetch to infromation
+- fetch the infromation
 
   
 
