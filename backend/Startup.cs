@@ -35,6 +35,7 @@ namespace backend
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, AppDbContext context)
         {
+
             context.Database.EnsureCreated();
 
             app.UseDeveloperExceptionPage();

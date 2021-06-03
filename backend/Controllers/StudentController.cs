@@ -67,7 +67,7 @@ namespace backend.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok(student);
         }
 
         // POST: api/Student
@@ -93,7 +93,7 @@ namespace backend.Controllers
             _context.Students.Remove(student);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok(student);
         }
 
         private bool StudentExists(int id)
