@@ -5,10 +5,10 @@
   <a href="https://safcsp.org.sa/en.html" target="_blank">
   <img src="https://raw.githubusercontent.com/tuwaiq-dotnet/json-parser-team-yaai/main/logo.png" alt="Tuwaiq Logo" width="80"></img></a>
   <br>
-  React CRUD
+  Web API CRUD
   <br>
 </h1>
-<h4 align="center">State, Lifecycles, and Axios implementation</h4>
+<h4 align="center">ASP.NET Core Web API with Entity Framework and Code First Approach</h4>
 
 ## [► Live Demo](https://younesalturkey.github.io/Project02/)
 
@@ -18,26 +18,40 @@
   <img src="https://raw.githubusercontent.com/YounesAlturkey/Project02/main/frontend/public/demo.png" alt="demo"/>
 </p>
 
+## [► Swagger UI](https://tuwaiqacademyapi.azurewebsites.net/swagger/index.html)
+
+<br/>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/YounesAlturkey/Project02_EF_ASP.NET_MVC/main/backend/demo.png" alt="demo"/>
+</p>
+
 <div dir="rtl">
 
   <br/>
   <br/>
   
-  ## الوصف
-اختيار فكرة المشروع راجعة للطالب بحيث يتم ادراج المتطلبات ادناه كاملةً. 
-<br>
-<br>
+  # فكرة المشروع
 
-## المتطلبات
+بناء مشروع ASP.NET MVC قائم على فكرة من اختيارك ويكون قادر على التعامل مع بيانات حقيقية باستخدام Entity Framework Core
 
-- تطبيق State
-- تطبيق دالتين على الأقل من دوال Lifecycle
-- تطبيق axios
+# متطلبات المشروع
 
-  **ملاحظة** :
-  بعد الانتهاء من تنفيذ المشروع يرجى إضافة صورة من واجهة الصفحة في ملف README.md
+- استخدام Entity Framework Core وربطها بقاعدة بيانات Database
+  - استخدام Migration وCodeFirst Approach
+  - إنشاء على الأقل ٤ جداول
+  - إضافة بيانات مبدئية على قاعدة البيانات `Seeding`
+  - استخدام مفهوم العلاقات بين الجداول
+  - عمل fetch استرجاع للبيانات
 
-  </div>
+# إضافة | Bouns
+
+- عمل ٢ أو أكثر من وظائف CRUD على المشروع
+- التعامل مع React في المشروع بأستخدام الـ API
+
+# التسليم
+
+يوم الأحد June 6th، الساعة 9:00 am
 
   <div align="right">
 
