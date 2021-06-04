@@ -1,0 +1,39 @@
+﻿
+@{
+    var Lecturers = (List<Lecturer>)ViewData["Lecturers"];
+    Layout = "_LayoutDesign";
+
+}
+
+<h1 style="text-align:center;padding-bottom:30px">Current Lecturers</h1>
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <td>
+                Id
+            </td>
+            <td>
+                First Name
+            </td>
+            <td>
+                Last Name
+            </td>
+            <td>
+                Email
+            </td>
+
+        </tr>
+        </th>
+    <tbody>
+        @foreach (var Lecturer in Lecturers)
+        {
+            <tr>
+                <td>@Lecturer.Id</td>
+                <td>@Lecturer.FirstName</td>
+                <td>@Lecturer.LastName</td>
+                <td>@Lecturer.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
