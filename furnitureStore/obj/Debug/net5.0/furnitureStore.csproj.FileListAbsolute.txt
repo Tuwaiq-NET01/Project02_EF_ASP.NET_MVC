@@ -1,0 +1,8 @@
+C:\Users\WIN\Desktop\Project02_EF_ASP.NET_MVC-main\furnitureStore\obj\Debug\net5.0\furnitureStore.csproj.AssemblyReference.cache
+C:\Users\WIN\Desktop\Project02_EF_ASP.NET_MVC-main\furnitureStore\obj\Debug\net5.0\furnitureStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WIN\Desktop\Project02_EF_ASP.NET_MVC-main\furnitureStore\obj\Debug\net5.0\furnitureStore.AssemblyInfoInputs.cache
+C:\Users\WIN\Desktop\Project02_EF_ASP.NET_MVC-main\furnitureStore\obj\Debug\net5.0\furnitureStore.AssemblyInfo.cs
+C:\Users\WIN\Desktop\Project02_EF_ASP.NET_MVC-main\furnitureStore\obj\Debug\net5.0\furnitureStore.csproj.CoreCompileInputs.cache
+C:\Users\WIN\Desktop\Project02_EF_ASP.NET_MVC-main\furnitureStore\obj\Debug\net5.0\furnitureStore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\WIN\Desktop\Project02_EF_ASP.NET_MVC-main\furnitureStore\obj\Debug\net5.0\furnitureStore.RazorAssemblyInfo.cache
+C:\Users\WIN\Desktop\Project02_EF_ASP.NET_MVC-main\furnitureStore\obj\Debug\net5.0\furnitureStore.RazorAssemblyInfo.cs
