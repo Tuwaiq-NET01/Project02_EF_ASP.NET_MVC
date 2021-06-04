@@ -1,4 +1,22 @@
 ﻿@page
 @model EF_MVC.Views.Reviews.IndexModel
 @{
+    var reviews = (List<ReviewModel>)ViewBag.Reviews;
 }
+
+<div class="ui comments" style="margin:100px">
+    <h3 class="ui dividing header">All Reviews</h3>
+    @foreach (var review in reviews)
+    {
+        <div class="comment">
+            <div class="content">
+                <div class="text">
+                    @review.Content
+                </div>
+                <div class="actions">
+                    <a class="reply">Reply</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -2,14 +2,16 @@
 using EF_MVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EF_MVC.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210604171607_InsertAll2")]
+    partial class InsertAll2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -79,27 +81,6 @@ namespace EF_MVC.Migrations
                             Author = "Antoine de Saint-Exupéry",
                             Cover = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1367545443l/157993.jpg",
                             Title = "The Little Prince"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Author = "Matt Haig",
-                            Cover = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602190253l/52578297.jpg",
-                            Title = "The Midnight Library"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Author = "Emily St. John Mandel",
-                            Cover = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1564199892l/45754981.jpg",
-                            Title = "The Glass Hotel"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            Author = "Abi Daré",
-                            Cover = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1581128232l/50214741.jpg",
-                            Title = "The Girl with the Louding Voice"
                         });
                 });
 
@@ -162,14 +143,6 @@ namespace EF_MVC.Migrations
                             Bio = "Innovation distinguishes between a leader and a follower.",
                             Name = "Steve Hobes",
                             UserId = 4
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Avatar = "https://semantic-ui.com/images/avatar/large/jenny.jpg",
-                            Bio = "Reading one book is like eating one potato chip",
-                            Name = "Joe Nadal",
-                            UserId = 5
                         });
                 });
 
@@ -255,12 +228,6 @@ namespace EF_MVC.Migrations
                         {
                             Id = 4,
                             Email = "Steve.Hobes@gmail.com",
-                            Password = "123456"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Email = "JoeNadal@gmail.com",
                             Password = "123456"
                         });
                 });
