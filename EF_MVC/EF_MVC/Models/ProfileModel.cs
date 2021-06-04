@@ -13,6 +13,7 @@ namespace EF_MVC.Models
         public string Name { get; set; }
         [MaxLength(248)]
         public string Bio { get; set; }
+        public string Avatar { get; set; }
 
         // navigation properties
         public UserModel User { get; set; }

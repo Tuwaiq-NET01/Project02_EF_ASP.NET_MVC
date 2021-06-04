@@ -2,14 +2,16 @@
 using EF_MVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EF_MVC.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210604145213_EditProfilesTable2")]
+    partial class EditProfilesTable2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -36,50 +38,6 @@ namespace EF_MVC.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Books");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Author = "William Golding",
-                            Cover = "http://books.google.com/books/content?id=r6eoCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-                            Title = "Lord of the Flies"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Author = "رضوى عاشور",
-                            Cover = "http://books.google.com/books/content?id=ev1KDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-                            Title = "ثلاثية غرناطة"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Author = "خالد حسيني",
-                            Cover = "http://books.google.com/books/content?id=cvPvsgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-                            Title = "و رددت الجبال الصدى"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Author = "كيم إكلين",
-                            Cover = "http://books.google.com/books/content?id=Of6vDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-                            Title = "في ظل الحياة المرئية"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Author = "J. K. Rowling",
-                            Cover = "http://books.google.com/books/content?id=HksgDQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-                            Title = "Harry Potter and the Philosopher's Stone"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Author = "Antoine de Saint-Exupéry",
-                            Cover = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1367545443l/157993.jpg",
-                            Title = "The Little Prince"
-                        });
                 });
 
             modelBuilder.Entity("EF_MVC.Models.ProfileModel", b =>
