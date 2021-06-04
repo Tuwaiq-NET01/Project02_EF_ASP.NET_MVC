@@ -2,14 +2,16 @@
 using EF_MVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EF_MVC.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210604181300_EditBooks")]
+    partial class EditBooks
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,7 +44,7 @@ namespace EF_MVC.Migrations
                         {
                             Id = 1,
                             Author = "William Golding",
-                            Cover = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327869409l/7624.jpg",
+                            Cover = "http://books.google.com/books/content?id=r6eoCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
                             Title = "Lord of the Flies"
                         },
                         new
@@ -63,7 +65,7 @@ namespace EF_MVC.Migrations
                         {
                             Id = 4,
                             Author = "كيم إكلين",
-                            Cover = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1481285373l/33297809._SX318_.jpg",
+                            Cover = "http://books.google.com/books/content?id=Of6vDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
                             Title = "في ظل الحياة المرئية"
                         },
                         new
