@@ -52,6 +52,35 @@ namespace furnitureStore.Data
                 Image = "https://assets.weimgs.com/weimgs/rk/images/wcm/products/202115/0104/tripod-dining-table-walnut-c.jpg",
 
             });
+            modelBuilder.Entity<Furniture>().HasData(new Furniture
+            {
+                Id = 4,
+                Name = "Sofa 3 Seater  ",
+                Price = 4000,
+                Image = "https://www.woods-furniture.co.uk/images/products/large/7710.jpg",
+
+            });
+
+            modelBuilder.Entity<Furniture>().HasData(new Furniture
+            {
+                Id = 5,
+                Name = "Sofa",
+                Price = 700,
+                Image = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/walmart-sofa-1538774260.jpg?crop=0.923xw:0.462xh;0.0657xw,0.401xh&resize=1200:*",
+
+            });
+
+            modelBuilder.Entity<Furniture>().HasData(new Furniture
+            {
+                Id = 6,
+                Name = "Round dining table",
+                Price = 600,
+                Image = "https://cdn.shopify.com/s/files/1/0104/1524/3330/products/zoco-home-furnitures-furnitures-tables-round-dining-table-140cm-tab1014-11553669251138_1000x1000.png?v=1606681288",
+
+            });
+
+  
+
 
             modelBuilder.Entity<Customer>().HasData(new Customer
             {
