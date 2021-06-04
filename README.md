@@ -6,15 +6,15 @@
 
 # The project contain the following requirement
 
-- Database Name (furnituerstore)
+- Database Name (furnituerDatabase) 
 
-- Relation one to one and one to many
+- Add Relation one to one between (payment , customer and carditem , cutomer ) also one to many between (category , furniture) 
 
 - Adding seeding
 
 - 5 table
 
-- fetch the infromation
+- Fetch the infromation
 
   
 
