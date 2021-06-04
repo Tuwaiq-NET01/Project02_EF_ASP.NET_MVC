@@ -1,0 +1,8 @@
+﻿@model Project01.Models.CustomerModel;
+@{
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+    ViewData["Title"] = "userProfile";
+    var user = (CustomerModel)ViewData["userDetails"];
+}
+
+<h1>Welcome @user.Name</h1>

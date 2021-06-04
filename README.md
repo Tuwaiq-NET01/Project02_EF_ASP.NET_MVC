@@ -1,23 +1,22 @@
-# Project02_EF_ASP.NET_MVC
-
-<div dir="rtl" align="right">
-# فكرة المشروع 
-
-بناء مشروع ASP.NET MVC قائم على فكرة من اختيارك ويكون قادر على التعامل مع بيانات حقيقية باستخدام Entity Framework Core 
-
-# متطلبات المشروع
-- استخدام Entity Framework Core وربطها بقاعدة بيانات Database
-    - استخدام Migration وCodeFirst Approach
-    - إنشاء على الأقل ٤ جداول
-    - إضافة بيانات مبدئية على قاعدة البيانات `Seeding`
-    - استخدام مفهوم العلاقات بين الجداول
-    - عمل fetch استرجاع للبيانات
-# إضافة | Bouns  
-- عمل ٢ أو أكثر من وظائف CRUD على المشروع
-- التعامل مع React في المشروع بأستخدام الـ API
+# Project01_ASP.NET_MVC
 
 
-# التسليم
+<div dir="rtl" >
+  
+  # محصولك
 
-يوم الأحد June 6th، الساعة 9:00 am
+  ## نبذه عن المشروع
+  
+  <img style="margin:auto;" width="250" alt="Screenshot 2021-05-26 at 19 25 30" src="https://user-images.githubusercontent.com/82483633/120075392-bbefe800-c0a9-11eb-8998-899116d1bb71.png">
+  
+  ## الصفحة الرئيسية
+   <img width="1000" alt="Screenshot 2021-05-26 at 19 25 30" src="https://user-images.githubusercontent.com/82483633/120075048-61a25780-c0a8-11eb-82b2-15441b961da1.PNG">
+  
+##  المتدربة: روابي براهيم الشدوخي
+## المشرفة: في العتيبي
+## اسم المجموعة: البحر الاحمر
+
 </div>
+
+
+
