@@ -59,3 +59,4 @@ C:\Users\moham\Desktop\proj2\PlayerReview\PlayerReview\obj\Debug\net5.0\PlayerRe
 C:\Users\moham\Desktop\proj2\PlayerReview\PlayerReview\obj\Debug\net5.0\ref\PlayerReview.dll
 C:\Users\moham\Desktop\proj2\PlayerReview\PlayerReview\obj\Debug\net5.0\PlayerReview.pdb
 C:\Users\moham\Desktop\proj2\PlayerReview\PlayerReview\obj\Debug\net5.0\PlayerReview.genruntimeconfig.cache
+C:\Users\moham\Desktop\proj2\PlayerReview\PlayerReview\obj\Debug\net5.0\Razor\Views\Games\Index.cshtml.g.cs
