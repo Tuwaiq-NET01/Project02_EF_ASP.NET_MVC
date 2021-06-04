@@ -1,0 +1,26 @@
+﻿@{ 
+    var airports=(List<AirportModel>)ViewBag.Airport;
+}
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Airport</th>
+            <th>ShortCut</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var airport in airports)
+        {
+            <tr>
+                <td>@airport.Airport_ID</td>
+                <td>@airport.Airport_Name</td>
+                <td>@airport.Airport_Short</td>
+                <td>@airport.Country_City</td>
+            </tr>
+
+        }
+    </tbody>
+</table>
