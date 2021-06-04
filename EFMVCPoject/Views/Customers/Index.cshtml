@@ -1,0 +1,32 @@
+﻿@{
+    List<CustomerModel> customers = (List<CustomerModel>)ViewData["Customers"];
+    
+}
+<h1>This is a Customers Index</h1>
+
+
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Address</td>
+            <td>OrderID</td>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var item in customers )
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.Name</td>
+                    <td>@item.Address</td>
+                    <td>@item.OrderID</td>
+                </tr>
+
+            }
+        }
+
+    </tbody>
+</table>

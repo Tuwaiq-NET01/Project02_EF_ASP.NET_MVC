@@ -1,0 +1,32 @@
+﻿@{
+    List<ProductModel> products = (List<ProductModel>)ViewData["Products"];
+
+}
+<h1>This is a Products Index</h1>
+
+
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Price</td>
+            <td>OrderLineID</td>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var item in products)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.Name</td>
+                    <td>@item.Price</td>
+                    <td>@item.OrderLineID</td>
+                </tr>
+
+            }
+        }
+
+    </tbody>
+</table>

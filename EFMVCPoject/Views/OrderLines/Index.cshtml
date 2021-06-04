@@ -1,0 +1,32 @@
+﻿@{
+    List<OrderLineModel> orderLines = (List<OrderLineModel>)ViewData["OrderLines"];
+
+}
+<h1>This is a Order Line Index</h1>
+
+
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Quantity</td>
+            <td>Subtotal</td>
+            <td>OrderID</td>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var item in orderLines)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.Subtotal</td>
+                    <td>@item.OrderID</td>
+                </tr>
+
+            }
+        }
+
+    </tbody>
+</table>

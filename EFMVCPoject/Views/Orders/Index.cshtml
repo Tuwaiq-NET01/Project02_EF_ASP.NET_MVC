@@ -1,0 +1,27 @@
+﻿@{
+    List<OrderModel> orders = (List<OrderModel>)ViewData["Orders"];
+}
+<h1>This is a Order Index</h1>
+
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Total</td>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var item in orders)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.Total</td>
+                </tr>
+
+            }
+        }
+
+    </tbody>
+</table>
