@@ -20,5 +20,8 @@ namespace PlayerReview.Models
         public int CompanyId { get; set; } //FK
         public Company Company{ get; set;}
 
+
+
+
     }
 }

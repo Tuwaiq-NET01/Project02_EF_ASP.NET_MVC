@@ -8,11 +8,15 @@ namespace PlayerReview.Models
 {
     public class User
     {
-        //[Key]
-        //public int Id { get; set; }
-        //public string GameName { get; set; }
-        //public string Description { get; set; }
-        //public string Image { get; set; }
-        //public string Genre { get; set; }
+        [Key]
+        public int Id { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Email{ get; set; }
+
+        public int ReviewId { get; set; } //FK
+        public Review Review { get; set; }
+
+
     }
 }

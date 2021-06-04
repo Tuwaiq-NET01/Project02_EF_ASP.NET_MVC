@@ -6522,7 +6522,6 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.EntityFrameworkCore >= 3.1.10",
-      "Microsoft.EntityFrameworkCore.Design >= 3.1.10",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.10",
       "MySql.Data.EntityFrameworkCore >= 8.0.22",
       "bootstrap >= 5.0.1"
@@ -6576,12 +6575,6 @@
         "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[3.1.10, )"
-          },
-          "Microsoft.EntityFrameworkCore.Design": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
             "target": "Package",
             "version": "[3.1.10, )"
           },
