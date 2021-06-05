@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace MovieApi.Models
 {
@@ -12,10 +13,12 @@ namespace MovieApi.Models
         public string Comment { get; set; }
         
         // Relationship Movie - Reviews
+        [JsonIgnore]
         public MovieModel Movie { get; set; }
         public int MovieId { get; set; }
         
         // Relationship Users - Reviews
+        [JsonIgnore]
         public UserModel User { get; set; }
         public int UserId { get; set; }
         

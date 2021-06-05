@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace MovieApi.Models
 {
@@ -10,6 +11,7 @@ namespace MovieApi.Models
         public string name { get; set; }
         
         // Movie To Genre Relationship M-M
+        [JsonIgnore]
         public List<GenreMovieModel> GenreMovie { get; set; }
     }
 }
