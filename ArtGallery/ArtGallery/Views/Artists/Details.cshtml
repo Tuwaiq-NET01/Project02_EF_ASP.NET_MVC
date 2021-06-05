@@ -1,0 +1,57 @@
+﻿@{
+    var Artists = (ArtistModel)ViewData["Artists"];
+    var Paintings = (List<PaintingModel>)ViewData["Paintings"];
+}
+
+
+
+<div class="card mb-5" style="margin-bottom:20px; margin-top:20px; text-align:center">
+    <div class="card mb-6">
+        <h3 class="card-header">@Artists.ArtName </h3>
+        <div class="card-body">
+            <p> @Artists.ArtBio</p>
+            <div class="row" style="align-content: center">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <img class="img-fluid" src="@Artists.ArtImg" alt="Card image cap" height="400" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <div class="card-body">
+                <a href="/Artists" class="btn btn-dark">Back</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+@foreach (var paint in Paintings)
+{
+
+    <div class="card mb-5" style="margin-bottom:20px; margin-top:20px; text-align:center">
+        <div class="card mb-12">
+            <h4 class="card-header"> @paint.PntName</h4>
+            <div class="card-body">
+                <p> @paint.PntOverview</p>
+                <div class="row" style="align-content: center">
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <img class="img-fluid" src="@paint.PntImg" alt="Card image cap" height="400" width="200">
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <p> Euro @paint.PntPrice</p>
+                </div>
+
+             
+            </div>
+    </div>
+        </div>
+
+}

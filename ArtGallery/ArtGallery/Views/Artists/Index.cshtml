@@ -1,0 +1,31 @@
+﻿@{
+    var Artists = (List<ArtistModel>)ViewData["Artists"];
+}
+
+<h1 style="text-align: center; color:aliceblue; margin-top: 10%;">Artists</h1>
+
+
+<div class="container">
+    <div class="row">
+
+        @foreach (var item in Artists)
+        {
+
+            <div class="col-4" style="margin-top:10%; text-align:center">
+                <div class="card mb-3">
+                    <h3 class="card-header">@item.ArtName</h3>
+                    <div class="card-body">
+                        <img class="card-img-top" src="@item.ArtImg" alt="Card image cap" height="200" width="80">
+                    </div>
+
+                    <div class="card-body">
+                        <a href="/Artists/Details/@item.ArtId" class="btn btn-dark">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+        }
+
+    </div>
+</div>
