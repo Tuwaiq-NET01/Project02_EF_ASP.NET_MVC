@@ -1,5 +1,7 @@
 # Project02_EF_ASP.NET_MVC
 
+# ERD
+![ERD](https://github.com/hanan-tuwaiq/Project02_EF_ASP.NET_MVC/blob/main/imgs/ERD.png?raw=true)
 <div dir="rtl" align="right">
 # فكرة المشروع 
 
