@@ -1,0 +1,62 @@
+﻿<Properties StartupConfiguration="{53E45196-627A-42FF-9455-C4A688D229E5}|Default">
+  <MonoDevelop.Ide.ItemProperties.BooksStoreMVC PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BooksStoreMVC/Migrations/20210605231807_WrittenByAuthorsBooks.cs">
+    <Files>
+      <File FileName="BooksStoreMVC/Migrations/20210605221420_Contributor.cs" Line="1" Column="1" IsPinned="True" />
+      <File FileName="BooksStoreMVC/Startup.cs" Line="30" Column="25" />
+      <File FileName="BooksStoreMVC/appsettings.json" Line="10" Column="32" />
+      <File FileName="BooksStoreMVC/Program.cs" Line="1" Column="1" />
+      <File FileName="BooksStoreMVC/Data /AppDbContext.cs" Line="89" Column="11" />
+      <File FileName="BooksStoreMVC/Models/AutherModel.cs" Line="24" Column="6" />
+      <File FileName="BooksStoreMVC/Controllers/ContributorsController.cs" Line="22" Column="1" />
+      <File FileName="BooksStoreMVC/Controllers/AuthersController.cs" Line="6" Column="26" />
+      <File FileName="BooksStoreMVC/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="BooksStoreMVC/Controllers/PublishersController.cs" Line="18" Column="12" />
+      <File FileName="BooksStoreMVC/Controllers/BooksController.cs" Line="26" Column="82" />
+      <File FileName="BooksStoreMVC/Models/WrittenByAuthorsBooks.cs" Line="4" Column="28" />
+      <File FileName="BooksStoreMVC/Models/PublisherModel.cs" Line="1" Column="1" />
+      <File FileName="BooksStoreMVC/Models/BookModel.cs" Line="24" Column="1" />
+      <File FileName="BooksStoreMVC/Models/ContributorModel.cs" Line="1" Column="1" />
+      <File FileName="BooksStoreMVC/Views/Contributor/Index.cshtml" Line="8" Column="15" />
+      <File FileName="BooksStoreMVC/Views/Book/Index.cshtml" Line="8" Column="33" />
+      <File FileName="BooksStoreMVC/Views/Publisher/Index.cshtml" Line="13" Column="25" />
+      <File FileName="BooksStoreMVC/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="BooksStoreMVC/Views/Contributor/Index.cshtml.cs" Line="11" Column="6" />
+      <File FileName="BooksStoreMVC/Views/Auther/Index.cshtml" Line="17" Column="51" />
+      <File FileName="BooksStoreMVC/Views/Auther/Index.cshtml.cs" Line="8" Column="37" />
+      <File FileName="BooksStoreMVC/Migrations/20210605215105_Book.cs" Line="1" Column="1" />
+      <File FileName="BooksStoreMVC/Migrations/20210605231807_WrittenByAuthorsBooks.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BooksStoreMVC" expanded="True">
+            <Node name="BooksStoreMVC" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data " expanded="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="20210605231807_WrittenByAuthorsBooks.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Auther" expanded="True" />
+                <Node name="Book" expanded="True" />
+                <Node name="Contributor" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Publisher" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/nadaalotaibi/Desktop/BooksStoreMVC/BooksStoreMVC/Data/AppDbContext.cs" relfile="BooksStoreMVC/Data/AppDbContext.cs" line="23" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

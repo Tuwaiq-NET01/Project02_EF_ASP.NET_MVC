@@ -1,0 +1,20 @@
+﻿@page
+@model BooksStoreMVC.Views.Contributor.IndexModel
+@{
+    var Contributor = (List<ContributorModel>)ViewBag.Contributor;
+    var searchByID = (ContributorModel)ViewBag.SearchByID;
+
+}
+<h2>Search for Contributor with id 2</h2>
+<h3>@searchByID.ConID | @searchByID.ConName | @searchByID.ConPhone</h3>
+
+@foreach (var Con in Contributor)
+{
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">@Con.ConID</h5>
+            <p class="card-text">@Con.ConName | @Con.ConPhone</p>
+            <a href="#" class="btn btn-primary"> Contributor</a>
+        </div>
+    </div>
+}

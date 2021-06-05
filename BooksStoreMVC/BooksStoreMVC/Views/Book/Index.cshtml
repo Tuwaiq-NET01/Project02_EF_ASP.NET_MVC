@@ -1,0 +1,20 @@
+﻿@page
+@model BooksStoreMVC.Views.Book.IndexModel
+@{
+    var Books = (List<BookModel>)ViewBag.Books;
+    var searchByID = (BookModel)ViewBag.SearchByID;
+
+}
+<h2>Search for Book with id 1234</h2>
+<h3>@searchByID.ISBN | @searchByID.Title | @searchByID.Price</h3>
+
+@foreach (var Book in Books)
+{
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">@Book.ISBN</h5>
+            <p class="card-text">@Book.Title | @Book.Price</p>
+            <a href="#" class="btn btn-primary">Book</a>
+        </div>
+    </div>
+}

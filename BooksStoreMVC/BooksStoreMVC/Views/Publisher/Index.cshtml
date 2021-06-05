@@ -1,0 +1,20 @@
+﻿@page
+@model BooksStoreMVC.Views.Publisher.IndexModel
+@{
+    var publishers = (List<PublisherModel>)ViewBag.publishers;
+    var searchByID = (PublisherModel)ViewBag.SearchByID;
+
+}
+<h2>Search for Publisher with id 2</h2>
+<h3>@searchByID.PubId | @searchByID.PubPhone | @searchByID.PubPhone</h3>
+
+@foreach (var PUb in publishers)
+{
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">@PUb.PubId</h5>
+            <p class="card-text">@PUb.PubPhone | @PUb.PubName</p>
+            <a href="#" class="btn btn-primary"> publishers</a>
+        </div>
+    </div>
+}
