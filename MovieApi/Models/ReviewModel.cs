@@ -12,7 +12,7 @@ namespace MovieApi.Models
         public string Comment { get; set; }
         
         // Relationship Movie - Reviews
-        public MoiveModel Movie { get; set; }
+        public MovieModel Movie { get; set; }
         public int MovieId { get; set; }
         
         // Relationship Users - Reviews

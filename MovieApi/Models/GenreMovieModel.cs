@@ -7,7 +7,7 @@
         public GenreModel Genre { get; set; }
         public int GenreId { get; set; }
 
-        public MoiveModel Movie { get; set; }
+        public MovieModel Movie { get; set; }
         public int MovieId { get; set; }
     }
 }

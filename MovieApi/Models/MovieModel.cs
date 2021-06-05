@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MovieApi.Models
 {
-    public class MoiveModel
+    public class MovieModel
     {
         [Key] public int id { get; set; }
         public string backdrop_path { get; set; }
@@ -14,8 +14,6 @@ namespace MovieApi.Models
         public double vote_average { get; set; }
         public int runtime { get; set; }
         public string imdb_id { get; set; }
-        public int budget { get; set; }
-        public int revenue { get; set; }
 
         // Relationship Movie - Reviews
         public List<ReviewModel> Reviews { get; set; }
