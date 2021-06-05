@@ -32,23 +32,23 @@ namespace PlayerReview.Data
             modelBuilder.Entity<Game>().HasData(new Game { Id = 3, GameName = "Black Ops", Description = desc, Image = "https://cdn.europosters.eu/image/750/posters/call-of-duty-black-ops-cover-i8700.jpg", CompanyId = 1 });
             modelBuilder.Entity<Game>().HasData(new Game { Id = 4, GameName = "Crash Bandicoot", Description = desc, Image = "https://cdn.europosters.eu/image/750/posters/crash-bandicoot-4-ride-i99518.jpg", CompanyId = 3 });
             modelBuilder.Entity<Game>().HasData(new Game { Id = 5, GameName = "Horizon", Description = desc, Image = "https://cdn.europosters.eu/image/750/posters/horizon-zero-dawn-key-art-i34856.jpg", CompanyId = 4 });
-            modelBuilder.Entity<Game>().HasData(new Game { Id = 6, GameName = "Need for Speed", Description = desc, Image = "https://lh3.googleusercontent.com/proxy/Xb1jfc8iI2vPhYM_N2kvbmCjQIyYc0n6RX2wBGT-MhbXjB63DygrF2vIlyi_3jxajbHsPy9-6u3fPRmadwTWktwEB0ypGLcxjb3O0FWSUt7FFG8ykhJQJiXMj3lmizjSS-tYEIjHy7g", CompanyId = 5 });
+            modelBuilder.Entity<Game>().HasData(new Game { Id = 6, GameName = "Need for Speed", Description = desc, Image = "https://i.pinimg.com/originals/cf/db/45/cfdb458b0f4e5ec157da2a0f4787cc66.jpg", CompanyId = 5 });
             modelBuilder.Entity<Game>().HasData(new Game { Id = 2, GameName = "Modern Warfare", Description = desc, Image = "https://m.media-amazon.com/images/M/MV5BMTc3NWY2ZTMtNTNlZC00MWM2LWI5MzYtMmU1YzY0ODk5ZjQ1XkEyXkFqcGdeQXVyODA2MTkwODk@._V1_.jpg", CompanyId = 1 });
             modelBuilder.Entity<Game>().HasData(new Game { Id = 7, GameName = "Need for Speed Heat", Description = desc, Image = "https://posterspy.com/wp-content/uploads/2019/12/46a85b70014089.5d717791b29ac.png", CompanyId = 5 });
 
 
 
             //seeding review
-            modelBuilder.Entity<Review>().HasData(new Review { Id = 1, Title = "Great Game!", Description = desc, GameId = 3 });
-            modelBuilder.Entity<Review>().HasData(new Review { Id = 2, Title = "Extremely fun Game!", Description = desc, GameId = 4});
-            modelBuilder.Entity<Review>().HasData(new Review { Id = 3, Title = "Amazing Visuals!", Description = desc, GameId = 5});
-            modelBuilder.Entity<Review>().HasData(new Review { Id = 4, Title = "Not that good...", Description = desc, GameId = 6});
-            modelBuilder.Entity<Review>().HasData(new Review { Id = 5, Title = "Boring.", Description = desc, GameId = 6});
-            modelBuilder.Entity<Review>().HasData(new Review { Id = 6, Title = "Very good.", Description = desc, GameId = 3});
-            modelBuilder.Entity<Review>().HasData(new Review { Id = 7, Title = "Great Game!", Description = desc, GameId = 7 });
-            modelBuilder.Entity<Review>().HasData(new Review { Id = 8, Title = "Great Game!", Description = desc, GameId = 1 });
-            modelBuilder.Entity<Review>().HasData(new Review { Id = 9, Title = "Very great game", Description = desc, GameId = 4 });
-            modelBuilder.Entity<Review>().HasData(new Review { Id = 10, Title = "I had so much fun!", Description = desc, GameId = 4 });
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 1, Stars = 4 , Title = "Great Game!", Description = desc, GameId = 3 });
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 2, Stars = 5 , Title = "Extremely fun Game!", Description = desc, GameId = 4});
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 3, Stars = 5 , Title = "Amazing Visuals!", Description = desc, GameId = 5});
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 4, Stars = 2 , Title = "Not that good...", Description = desc, GameId = 6});
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 5, Stars = 3 , Title = "Boring.", Description = desc, GameId = 6});
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 6, Stars = 4 , Title = "Very good.", Description = desc, GameId = 3});
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 7, Stars = 5 , Title = "Great Game!", Description = desc, GameId = 7 });
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 8, Stars = 1 , Title = "Great Game!", Description = desc, GameId = 1 });
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 9, Stars = 3 , Title = "Very great game.", Description = desc, GameId = 4 });
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 10, Stars = 4 ,  Title = "I had so much fun!", Description = desc, GameId = 4 });
 
 
             //seeding user

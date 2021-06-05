@@ -73,6 +73,12 @@ body {
 }
 
 
+.card {
+    transition: transform .2s;
+}
+    .card:hover {
+        transform: scale(1.1); 
+    }
 
 
 
@@ -86,7 +92,7 @@ body {
 }
 
     .soc-med:hover {
-        color: black;
+        color: #d1c3e9;
         text-decoration: none;
     }
 

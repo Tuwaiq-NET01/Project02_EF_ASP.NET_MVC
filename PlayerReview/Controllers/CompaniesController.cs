@@ -37,6 +37,11 @@ namespace PlayerReview.Controllers
             return View();
         }
 
+        //public IActionResult Create()
+        //{
+        //    return View();
+        //}
+
 
     }
 }

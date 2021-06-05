@@ -17,18 +17,18 @@
     <div class="col-8">
         <br />
         <h1>@game.GameName</h1>
-        <b>
+        <h3>
             Company:
             @foreach (var comp in companies)
             {
                 @if (comp.Id == game.CompanyId)
                 {
-                    <a href="/companies/detail/@comp.Id"> @comp.CompanyName</a>
+                    <a href="/companies/details/@comp.Id"> @comp.CompanyName</a>
                 }
             }
 
 
-        </b>
+        </h3>
         <br />
 
         <p>@desc</p>
@@ -48,12 +48,18 @@
         <div class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">@rev.Title</h5>
+                <div style="color: #e5d335;">
+                    @for (int i = 0; i < rev.Stars; i++)
+                    {
+                        <i class="fas fa-star fa-2x"></i>
+                    }
+                </div>
             </div>
             @foreach(var user in users)
                 {
                 @if(rev.Id == user.Id)
                     {
-
+            @user.Username
                     }
                 }
             <p class="mb-1">@rev.Description</p>
