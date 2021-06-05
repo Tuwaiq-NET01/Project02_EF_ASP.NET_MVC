@@ -1,0 +1,39 @@
+@{
+    var authors = (List<AuthorModel>) ViewData["Authors"];
+}
+
+<div class="row d-flex justify-content-center">
+    <h5>Authors</h5>
+    <div class="container p-4">
+        <div class="col-md-12">
+            <table class="table">
+                <thead class="bg-dark text-light">
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Books</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                @foreach (var author in authors)
+                {
+                    <tr>
+                        <td>@author.Id</td>
+                        <td>@author.FirstName</td>
+                        <td>@author.LastName</td>
+                        <td>
+                            @foreach (var book in @author.Books)
+                            {
+                                <div>@book.Book.Title</div>
+                            }
+                        </td>
+                    </tr>
+
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

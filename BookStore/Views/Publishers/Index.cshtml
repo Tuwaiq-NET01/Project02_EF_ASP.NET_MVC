@@ -1,0 +1,37 @@
+@{
+    var publishers = (List<PublisherModel>) ViewData["Publishers"];
+}
+
+<div class="row d-flex justify-content-center">
+    <h5>Publishers</h5>
+    <div class="container p-4">
+        <div class="col-md-12">
+            <table class="table">
+                <thead class="bg-dark text-light">
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Books</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                @foreach (var p in publishers)
+                {
+                    <tr>
+                        <td>@p.Id</td>
+                        <td>@p.Name</td>
+                        <td>
+                            @foreach (var book in @p.Books)
+                            {
+                                <div>@book.Title</div>
+                            }
+                        </td>
+                    </tr>
+
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

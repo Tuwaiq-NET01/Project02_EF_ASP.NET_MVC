@@ -1,0 +1,42 @@
+@{
+    var books = (List<BookModel>) ViewData["Books"];
+}
+
+<div class="row d-flex justify-content-center">
+    <h5>Books</h5>
+    <div class="container p-4">
+        <div class="col-md-12">
+            <table class="table">
+                <thead class="bg-dark text-light">
+                <tr>
+                    <th width="300px">Title</th>
+                    <th>Author</th>
+                    <th>Year</th>
+                    <th>Publisher</th>
+                    <th>Category</th>
+                    <th>Rating</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                @foreach (var book in books)
+                {
+                    <tr>
+                        <td>@book.Title</td>
+                        <td>
+                            @foreach (var author in @book.Authors)
+                            {
+                                <div>@author.Author.FirstName @author.Author.LastName</div>
+                            }
+                        </td>
+                        <td>@book.PublishedDate.Year</td>
+                        <td>@book.Publisher.Name</td>
+                        <td>@book.Category.Name</td>
+                        <td>@book.Rating</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
