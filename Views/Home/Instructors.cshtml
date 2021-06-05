@@ -1,0 +1,42 @@
+﻿@{
+    Instructor[] instructors;
+    if (ViewData["instructors"] != null) instructors =
+    ((IEnumerable<Instructor>)(ViewData["instructors"])).ToArray<Instructor>();
+    else instructors = new Instructor[] { };
+}
+
+<div class="text-center">
+    @if (instructors.Length > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>Expertise</td>
+                    <td>Join Date</td>
+                    <td>Teaching Class</td>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var instructor in instructors)
+                    {
+                        <tr>
+                            <td>@instructor.Id</td>
+                            <td>@instructor.Name</td>
+                            <td>@instructor.Expertise</td>
+                            <td>@instructor.JoinDate.Year/@instructor.JoinDate.Month/@instructor.JoinDate.Day</td>
+                            <td><a href="/Home/Classes/@instructor.ClassId">@instructor.ClassId</a></td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <h1>No Results</h1>
+        <h4>No bootcamps found with the given criteria</h4>
+    }
+</div>

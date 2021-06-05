@@ -1,0 +1,39 @@
+﻿@{
+    Bootcamp[] bootcamps;
+    if (ViewData["bootcamps"] != null) bootcamps = ((IEnumerable<Bootcamp>)(ViewData["bootcamps"])).ToArray<Bootcamp>();
+    else bootcamps = new Bootcamp[] { };
+}
+
+<div class="text-center">
+    @if (bootcamps.Length > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>Start Date</td>
+                    <td>End Date</td>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var bootcamp in bootcamps)
+                    {
+                        <tr>
+                            <td>@bootcamp.Id</td>
+                            <td>@bootcamp.Name</td>
+                            <td>@bootcamp.StartDate.Year/@bootcamp.StartDate.Month/@bootcamp.StartDate.Day</td>
+                            <td>@bootcamp.EndDate.Year/@bootcamp.EndDate.Month/@bootcamp.EndDate.Day</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <h1>No Results</h1>
+        <h4>No bootcamps found with the given criteria</h4>
+    }
+</div>
