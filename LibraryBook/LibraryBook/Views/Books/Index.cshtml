@@ -1,0 +1,33 @@
+﻿@{ var Books = (List<BookModel>)ViewData["Books"];
+}
+
+<table border="1">
+    <center>
+        <thead>
+            <tr>
+                <td>Book ID</td>
+                <td>Title</td>
+                <td>Price</td>
+                <td>NoPage</td>
+                <td>Notes</td>
+                <td>IdBookStore</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var b in Books)
+            {
+            <tr>
+                <td>@b.BookID</td>
+                <td>@b.Title</td>
+                <td>@b.Price</td>
+                <td>@b.NoPage</td>
+                <td>@b.Notes</td>
+                <td>@b.IdBookStore</td>
+
+
+
+            </tr>
+            }
+        </tbody>
+    </center>
+</table>
