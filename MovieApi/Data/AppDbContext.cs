@@ -13,6 +13,9 @@ namespace MovieApi.Data
         public DbSet<MoiveModel> Movies { get; set; }
         
         public DbSet<UserModel> Users { get; set; }
+        
+        public DbSet<GenreModel> Genres { get; set; }
+        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
