@@ -1,9 +1,17 @@
-# Project02_EF_ASP.NET_MVC
+# Project02_EF_ASP.NET_MVC (Grocery Store)
 
 <div dir="rtl" align="right">
-# فكرة المشروع 
 
-بناء مشروع ASP.NET MVC قائم على فكرة من اختيارك ويكون قادر على التعامل مع بيانات حقيقية باستخدام Entity Framework Core 
+# فكرة المشروع
+
+بناء مشروع ASP.NET MVC قائم على فكرة من اختيارك ويكون قادر على التعامل مع بيانات حقيقية باستخدام Entity Framework Core
+
+
+ 
+ <p align="center">
+<img src="https://raw.githubusercontent.com/NorahMAlmutairi/Project02_EF_ASP.NET_MVC/8f8626005cd46647851d4e1ff830f6e0faceb399/DemoGroceryStore.png" 
+alt="preview" width="600px">
+</p>
 
 # متطلبات المشروع
 - استخدام Entity Framework Core وربطها بقاعدة بيانات Database
@@ -12,12 +20,10 @@
     - إضافة بيانات مبدئية على قاعدة البيانات `Seeding`
     - استخدام مفهوم العلاقات بين الجداول
     - عمل fetch استرجاع للبيانات
-# إضافة | Bouns  
-- عمل ٢ أو أكثر من وظائف CRUD على المشروع
-- التعامل مع React في المشروع بأستخدام الـ API
 
+#  البيانات
+ - الإسم: نوره المطيري
+ - اسم الفريق : العلا
+ - اسم المشرفة : سارة القحطاني
 
-# التسليم
-
-يوم الأحد June 6th، الساعة 9:00 am
 </div>
