@@ -1,6 +1,25 @@
 # Project02_EF_ASP.NET_MVC
 
 <div dir="rtl" align="right">
+    
+    
+# بيانات المتدرب:
+
+المتدرب: معتز العجلان
+
+    
+المشرفة: غادة المطيري
+
+المجموعة: السودة
+
+    
+    
+    
+    
+https://user-images.githubusercontent.com/82468827/120900656-a72dca00-c63e-11eb-99af-18b7971e6704.mp4
+
+
+    
 # فكرة المشروع 
 
 بناء مشروع ASP.NET MVC قائم على فكرة من اختيارك ويكون قادر على التعامل مع بيانات حقيقية باستخدام Entity Framework Core 
