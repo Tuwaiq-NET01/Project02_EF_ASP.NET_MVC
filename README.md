@@ -1,8 +1,19 @@
 # Project02_EF_ASP.NET_MVC
 
 <div dir="rtl" align="right">
-# فكرة المشروع 
+# I have compound website
+    thats provide services and some events to the customer.
+    
+# Problems I faced:
+    - Thinking about database: tables and relations.
+    - creating the Db, i put the wrong port and i didn't find this mistake till i restarted again from scratch took 2 Hrs :(
+    - Dealing with DateTime parameter --> till I used new Datetime(yyyy,MM,dd)
+    - figureing out how to represent the info since its combined with the tables.
 
+    To be honest i learned alot still didn't start with api and the crud operations.
+    
+    
+    
 بناء مشروع ASP.NET MVC قائم على فكرة من اختيارك ويكون قادر على التعامل مع بيانات حقيقية باستخدام Entity Framework Core 
 
 # متطلبات المشروع
