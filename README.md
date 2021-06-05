@@ -16,3 +16,11 @@
 # العرض
 </div>
     <img src="https://b.top4top.io/p_1982qgd1i1.gif"  alt="" />
+<div dir="rtl" align="right" >
+    
+
+    >  اسم المتدربة: شهد الشهري 
+    >  اسم المشرفة: نورة عبدالله 
+    > الفريق: القدية
+
+</div>
