@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/hanans/Desktop/Tuwaiq/projects/Project02_EF_ASP.NET_MVC/Crystal-circus/Crystal-circus/Crystal-circus.csproj": {}
+  },
+  "projects": {
+    "/Users/hanans/Desktop/Tuwaiq/projects/Project02_EF_ASP.NET_MVC/Crystal-circus/Crystal-circus/Crystal-circus.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/hanans/Desktop/Tuwaiq/projects/Project02_EF_ASP.NET_MVC/Crystal-circus/Crystal-circus/Crystal-circus.csproj",
+        "projectName": "Crystal-circus",
+        "projectPath": "/Users/hanans/Desktop/Tuwaiq/projects/Project02_EF_ASP.NET_MVC/Crystal-circus/Crystal-circus/Crystal-circus.csproj",
+        "packagesPath": "/Users/hanans/.nuget/packages/",
+        "outputPath": "/Users/hanans/Desktop/Tuwaiq/projects/Project02_EF_ASP.NET_MVC/Crystal-circus/Crystal-circus/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/hanans/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

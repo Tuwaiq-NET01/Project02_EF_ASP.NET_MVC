@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Crystal_circus</title>
+    <link href="https://unpkg.com/tailwindcss@@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="p-4 flex justify-around w-1/2 mx-auto gap-2 font-bold">
+           <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+           <a asp-area="" asp-controller="Shows" asp-action="Index">Shows</a>
+           <a asp-area="" asp-controller="Performers" asp-action="Index">Performers</a>
+           <a asp-area="" asp-controller="Venues" asp-action="Index">Venues</a>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - Crystal Circus</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

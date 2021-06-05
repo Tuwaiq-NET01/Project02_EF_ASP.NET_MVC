@@ -1,0 +1,26 @@
+﻿@{
+    var performers = (List<PerformerModel>)ViewData["performers"];
+}
+<div class="bg-gradient-to-r from-pink-700 to-red-600 text-center font-semibold">We're reopening and taking strict safety measures</div>
+<div class="grid grid-cols-2 w-2/3 mx-auto">
+    @for (int i = 0; i < performers.Count(); i++)
+    {
+        @if (i % 2 == 0)
+        {
+            <div class="bg-gray-200 h-72 pt-24 text-gray-800">
+                <h1 class="ml-8 text-2xl font-bold">@performers[i].Name</h1>
+                <h3 class="ml-8">@performers[i].Profession</h3>
+            </div>
+            <div style="background-image: url( @performers[i].Image );background-position: center;background-repeat: no-repeat;background-size: cover;"></div>
+        }
+        else
+        {
+            <div style="background-image: url( @performers[i].Image );background-position: center;background-repeat: no-repeat;background-size: cover;"></div>
+
+            <div class="bg-gray-300 h-72 pt-24 text-gray-800">
+                <h1 class="ml-8 text-2xl font-bold">@performers[i].Name</h1>
+                <h3 class="ml-8">@performers[i].Profession</h3>
+            </div>
+        }
+    }
+</div>

@@ -1,0 +1,31 @@
+﻿@{
+    var shows = (List<ShowModel>)ViewData["shows"];
+    var venues = (List<VenueModel>)ViewData["venues"];
+}
+<div class="bg-gradient-to-r from-pink-700 to-red-600 text-center font-semibold">We're reopening and taking strict safety measures</div>
+<div>
+    
+    <div class="shows-img hero-img ">
+        <h1 class="title uppercase text-6xl w-48 font-bold"> Crystal Circus</h1>
+    </div>
+    <div class="p-16">
+        <table class="mx-auto p-4 text-center bg-gray-200 text-black">
+            @foreach (var show in shows)
+            {
+                <tr class="border border-gray-400">
+                    <td class="p-4 w-1/2 pr-2 border-r border-gray-400">
+                        @venues.Find(x => x.Id == show.VenueId).Address
+                    </td>
+                    <td class="p-4 border-r border-gray-400">
+                        @show.Time
+                    </td>
+                    <td class="p-4">
+                        <button class="rounded-full bg-pink-600 py-2 px-4 hover:bg-pink-500 transition ease-in duration-200">Buy Ticket</button>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+
+
+</div>

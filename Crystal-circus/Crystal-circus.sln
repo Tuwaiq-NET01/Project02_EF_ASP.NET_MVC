@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crystal-circus", "Crystal-circus\Crystal-circus.csproj", "{280A1C5A-A8C8-44E4-907A-023DDFCAD549}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{280A1C5A-A8C8-44E4-907A-023DDFCAD549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{280A1C5A-A8C8-44E4-907A-023DDFCAD549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{280A1C5A-A8C8-44E4-907A-023DDFCAD549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{280A1C5A-A8C8-44E4-907A-023DDFCAD549}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F57F084-D563-49EA-B1D3-214CD1DB67C2}
+	EndGlobalSection
+EndGlobal
