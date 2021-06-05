@@ -1,0 +1,19 @@
+﻿@{ 
+    var a = (AdopterModel)ViewData["Adopter"];
+}
+
+<div class="col-sm-6">
+
+    <div id="card" class="card bg-light box-shadow mr-5 mt-2" style="width: 18rem;">
+        <div class="card-body">
+            <img class="card-img-top" src="@a.image" alt="Card image cap">
+            <h5 class="card-title">Adopter: @a.name</h5>
+            <h5 class="font-weight-bold">Details:</h5>
+            <p class="card-text"> phone: @a.phone</p>
+            <p class="card-text align-content-center">  age: @a.age</p>
+            <p class="card-text">  gender: @a.gender</p>
+            <p class="card-text">  email: @a.email</p>
+
+        </div>
+    </div>
+</div>
