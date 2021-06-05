@@ -4,12 +4,14 @@
 ![image gif](image.gif)
 
 <h3>This project has:</h3>
-- ASP.NET MVC
-- React
-- MySQL database with relations
-- API between asp.NET and React
-- External API
-- CRUD Operations
+<ul>
+    <li>ASP.NET MVC</li>
+    <li>React</li>
+    <li>MySQL database with relations</li>
+    <li>API between asp.NET and React</li>
+    <li>External API</li>
+    <li>CRUD Operations</li>
+</ul>
 
 
 # فكرة المشروع 
