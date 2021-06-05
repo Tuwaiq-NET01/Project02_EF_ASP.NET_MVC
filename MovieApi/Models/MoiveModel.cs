@@ -5,8 +5,7 @@ namespace MovieApi.Models
 {
     public class MoiveModel
     {
-        [Key]
-        public int id { get; set; }
+        [Key] public int id { get; set; }
         public string backdrop_path { get; set; }
         public string overview { get; set; }
         public string poster_path { get; set; }
@@ -17,8 +16,12 @@ namespace MovieApi.Models
         public string imdb_id { get; set; }
         public int budget { get; set; }
         public int revenue { get; set; }
-        
+
         // Relationship Movie - Reviews
         public List<ReviewModel> Reviews { get; set; }
+
+        // Movie To Genre Relationship M-M
+        public List<GenreMovieModel> GenreMovie { get; set; }
+        
     }
 }
