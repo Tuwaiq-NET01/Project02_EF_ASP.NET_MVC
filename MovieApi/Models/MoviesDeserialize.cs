@@ -13,7 +13,8 @@ namespace MovieApi.Models
             public double vote_average { get; set; }
             public int runtime { get; set; }
             public string imdb_id { get; set; }
-            public List<int> genre_ids { get; set; }
+            
+            public List<Genre> genres { get; set; }
         }
 
         public class Genre

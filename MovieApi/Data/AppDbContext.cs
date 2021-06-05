@@ -37,6 +37,7 @@ namespace MovieApi.Data
                 MovieListResponse.Wait();
                 var MovieListResuls = MovieListResponse.Result.Content.ReadAsStringAsync();
                 movies = JsonSerializer.Deserialize<Root>(MovieListResuls.Result).results;
+                int count = 0;
 
                 for (int i = 0; i < movies.Count; i++)
                 {
@@ -46,8 +47,24 @@ namespace MovieApi.Data
                     var MovieResponse = client.GetAsync(MovieUri);
                     MovieResponse.Wait();
                     var MovieResult = MovieResponse.Result.Content.ReadAsStringAsync();
-                    // Seed Movie Here
+                    // Seed GenreMovie table
                     movies[i] = JsonSerializer.Deserialize<MoviesDeserialize>(MovieResult.Result);
+
+                    for (int j = 0; j < movies[i].genres.Count; j++)
+                    {
+                        // Seed GenreMovie Here
+                        modelBuilder.Entity<GenreMovieModel>().HasData(
+                                new GenreMovieModel()
+                                {
+                                    Id = (count + (j + 1)), GenreId = movies[i].genres[j].id, MovieId = movies[i].id
+                                })
+                            ;
+                    }
+
+                    count += movies[i].genres.Count;
+                    
+                    // Seed Movie 
+                    
                     var CurrentMovie = movies[i];
 
                     modelBuilder.Entity<MovieModel>().HasData(
@@ -61,18 +78,6 @@ namespace MovieApi.Data
                             vote_average = CurrentMovie.vote_average
                         }
                     );
-
-
-                    /*var movieGenres = movies[i].genre_ids;
-                    for (int j = 0; j < movieGenres.Count; j++)
-                    {
-                        // Seed GenreMovie Here
-                        modelBuilder.Entity<GenreMovieModel>().HasData(
-                            new GenreMovieModel()
-                            {
-                                Id = (j+1),GenreId = movieGenres[j],MovieId = CurrentMovie.id
-                            });
-                    }*/
                 }
 
                 var GenreUri = new Uri(
