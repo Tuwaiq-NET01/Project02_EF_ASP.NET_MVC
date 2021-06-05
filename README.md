@@ -21,3 +21,23 @@
 
 يوم الأحد June 6th، الساعة 9:00 am
 </div>
+
+#
+
+
+<div align="center">
+    <h3> Book store database </h3>
+<img src="diagram.png" alt="diagram" width="650"/>
+</div>
+
+#
+
+<div dir="rtl"> 
+
+###  معلومات المتدرب
+
+- اسم المتدرب: مريم الردادي
+- اسم المشرف: غادة المطيري
+- اسم الفريق: السودة
+
+</div>
