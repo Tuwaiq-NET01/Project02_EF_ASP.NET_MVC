@@ -20,4 +20,17 @@
 # التسليم
 
 يوم الأحد June 6th، الساعة 9:00 am
+
+# عدد الجداول ٤ 
+<img width='500px' height='400px' src='tables.png'>
+
+# البيانات 
+تمت تعبئة بيانات عشوائية عن طريق استخدام مكتبة Bogus
+
+# عرض البيانات
+<img width='700px' height='400px' src='cars.png'>
+<img width='700px' height='400px' src='customers.png'>
+<img width='700px' height='400px' src='stores.png'>
+
+
 </div>
