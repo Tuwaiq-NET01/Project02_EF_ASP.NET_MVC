@@ -1,4 +1,21 @@
-# Project02_EF_ASP.NET_MVC
+# PlayerReview
+
+### PROJECT2: 
+ASP.NET Core 5 MCV Entity Framework Project 
+
+<br />
+<b> Student:</b>  Mohammed Rashed Albalawi.
+<br />
+<b> Group:</b>  Al-qiddiyah.
+<br />
+<b> Group Supervisor:</b>  Noorah Abdullah.
+
+
+<br />
+<hr />
+<br />
+
+
 
 
 # فكرة المشروع 
