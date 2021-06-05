@@ -11,19 +11,18 @@ namespace MovieApi.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-            
         }
-        
+
         public DbSet<MovieModel> Movies { get; set; }
-        
+
         public DbSet<UserModel> Users { get; set; }
-        
+
         public DbSet<GenreModel> Genres { get; set; }
-        
+
         public DbSet<ReviewModel> Reviews { get; set; }
-        
+
         public DbSet<GenreMovieModel> GenreMovie { get; set; }
-        
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -31,7 +30,7 @@ namespace MovieApi.Data
             {
                 List<MoviesDeserialize> movies;
                 List<Genre> Genres;
-                
+
                 var MovieListUri = new Uri(
                     "https://api.themoviedb.org/3/movie/popular?api_key=9e058083ea188da98174ef4a8d1c2f31&language=en-US&page=1");
                 var MovieListResponse = client.GetAsync(MovieListUri);
@@ -50,25 +49,33 @@ namespace MovieApi.Data
                     // Seed Movie Here
                     movies[i] = JsonSerializer.Deserialize<MoviesDeserialize>(MovieResult.Result);
                     var CurrentMovie = movies[i];
-    
+
                     modelBuilder.Entity<MovieModel>().HasData(
                         new MovieModel()
                         {
-                            backdrop_path = CurrentMovie.backdrop_path , id = CurrentMovie.id , imdb_id = CurrentMovie.imdb_id,
-                            overview = CurrentMovie.overview , poster_path = CurrentMovie.poster_path, release_date = CurrentMovie.release_date,
-                            title = CurrentMovie.title, runtime = CurrentMovie.runtime , vote_average = CurrentMovie.vote_average
+                            backdrop_path = CurrentMovie.backdrop_path, id = CurrentMovie.id,
+                            imdb_id = CurrentMovie.imdb_id,
+                            overview = CurrentMovie.overview, poster_path = CurrentMovie.poster_path,
+                            release_date = CurrentMovie.release_date,
+                            title = CurrentMovie.title, runtime = CurrentMovie.runtime,
+                            vote_average = CurrentMovie.vote_average
                         }
                     );
-                    
-                    
-                    var movieGenres = movies[i].genre_ids;
+
+
+                    /*var movieGenres = movies[i].genre_ids;
                     for (int j = 0; j < movieGenres.Count; j++)
                     {
                         // Seed GenreMovie Here
-                    }
-
+                        modelBuilder.Entity<GenreMovieModel>().HasData(
+                            new GenreMovieModel()
+                            {
+                                Id = (j+1),GenreId = movieGenres[j],MovieId = CurrentMovie.id
+                            });
+                    }*/
                 }
-                /*var GenreUri = new Uri(
+
+                var GenreUri = new Uri(
                     "https://api.themoviedb.org/3/genre/movie/list?api_key=9e058083ea188da98174ef4a8d1c2f31&language=en-US");
                 var GenreResponse = client.GetAsync(GenreUri);
                 GenreResponse.Wait();
@@ -76,15 +83,15 @@ namespace MovieApi.Data
 
                 Genres = JsonSerializer.Deserialize<Root>(GenreResult.Result).genres;
 
-
                 foreach (var genre in Genres)
                 {
                     // Seed Here
-                }*/
-                
+                    modelBuilder.Entity<GenreModel>().HasData(new GenreModel()
+                    {
+                        id = genre.id, name = genre.name
+                    });
+                }
             }
-            
-
         }
     }
 }
