@@ -1,23 +1,16 @@
 # Project02_EF_ASP.NET_MVC
 
 <div dir="rtl" align="right">
-# فكرة المشروع 
+#
+اسم المتدرب : مشعل نجدي , 
+اسم المشرف : نوره محسن , 
+اسم المجموعة : نيوم 
+----------
+Players Controllers & fetch : 
 
-بناء مشروع ASP.NET MVC قائم على فكرة من اختيارك ويكون قادر على التعامل مع بيانات حقيقية باستخدام Entity Framework Core 
+![Image of Players Controller](https://cdn3.bbcode0.com/uploads/2021/6/5/453536161bb4c673116af3cca5bec258-full.jpg)
 
-# متطلبات المشروع
-- استخدام Entity Framework Core وربطها بقاعدة بيانات Database
-    - استخدام Migration وCodeFirst Approach
-    - إنشاء على الأقل ٤ جداول
-    - إضافة بيانات مبدئية على قاعدة البيانات `Seeding`
-    - استخدام مفهوم العلاقات بين الجداول
-    - عمل fetch استرجاع للبيانات
-# إضافة | Bouns  
-- عمل ٢ أو أكثر من وظائف CRUD على المشروع
-- التعامل مع React في المشروع بأستخدام الـ API
+Teams Controllers : 
 
 
-# التسليم
-
-يوم الأحد June 6th، الساعة 9:00 am
-</div>
+![Image of Teams Controllers](https://cdn1.bbcode0.com/uploads/2021/6/5/c719a7419546f14ed716ad932fb5a986-full.jpg)
