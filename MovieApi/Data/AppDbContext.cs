@@ -26,6 +26,7 @@ namespace MovieApi.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // Seed MovieModel , GenreModel , GenreMovieModel
             using (var client = new HttpClient())
             {
                 List<MoviesDeserialize> movies;
@@ -62,9 +63,9 @@ namespace MovieApi.Data
                     }
 
                     count += movies[i].genres.Count;
-                    
+
                     // Seed Movie 
-                    
+
                     var CurrentMovie = movies[i];
 
                     modelBuilder.Entity<MovieModel>().HasData(
@@ -97,6 +98,18 @@ namespace MovieApi.Data
                     });
                 }
             }
+
+            // Seed Users 
+            modelBuilder.Entity<UserModel>().HasData(new UserModel()
+                {
+                    Id = 1, UserName = "Abdullah",
+                    ProfilePic = "http://farmersca.com/wp-content/uploads/2016/07/default-profile.png"
+                },
+                new UserModel()
+                {
+                    Id = 2, UserName = "Mohammed",
+                    ProfilePic = "http://farmersca.com/wp-content/uploads/2016/07/default-profile.png"
+                });
         }
     }
 }
