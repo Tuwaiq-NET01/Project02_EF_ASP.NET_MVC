@@ -2,6 +2,16 @@
 
 # asp.NET with React Project
 ![image gif](image.gif)
+
+<h3>This project has:</h3>
+- ASP.NET MVC
+- React
+- MySQL database with relations
+- API between asp.NET and React
+- External API
+- CRUD Operations
+
+
 # فكرة المشروع 
 
 بناء مشروع ASP.NET MVC قائم على فكرة من اختيارك ويكون قادر على التعامل مع بيانات حقيقية باستخدام Entity Framework Core 
