@@ -1,6 +1,7 @@
 # Project02_EF_ASP.NET_MVC
 
-
+# asp.NET with React Project
+![image gif](image.gif)
 # فكرة المشروع 
 
 بناء مشروع ASP.NET MVC قائم على فكرة من اختيارك ويكون قادر على التعامل مع بيانات حقيقية باستخدام Entity Framework Core 
