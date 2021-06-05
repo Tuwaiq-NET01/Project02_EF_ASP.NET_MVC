@@ -110,6 +110,24 @@ namespace MovieApi.Data
                     Id = 2, UserName = "Mohammed",
                     ProfilePic = "http://farmersca.com/wp-content/uploads/2016/07/default-profile.png"
                 });
+
+
+            // Seed Reviews 
+
+            modelBuilder.Entity<ReviewModel>().HasData(
+                // User 1
+                new ReviewModel() {Id = 1, Comment = "The Best Movie", MovieId = 399566, Rating = 9.2f, UserId = 1},
+                new ReviewModel() {Id = 2, Comment = "Good Movie", MovieId = 637649, Rating = 8.2f, UserId = 1},
+                new ReviewModel() {Id = 3, Comment = "Not Bad", MovieId = 503736, Rating = 6.5f, UserId = 1},
+                new ReviewModel() {Id = 4, Comment = "This is best movie Ever", MovieId = 578701, Rating = 9.8f, UserId = 1},
+                new ReviewModel() {Id = 5, Comment = "Good Movie", MovieId = 615457, Rating = 7.3f, UserId = 1},
+                // User 2
+                new ReviewModel() {Id = 6, Comment = "very Bad", MovieId = 717192, Rating = 3.2f, UserId = 2},
+                new ReviewModel() {Id = 7, Comment = "Very Good Movie", MovieId = 573680, Rating = 8.4f, UserId = 2},
+                new ReviewModel() {Id = 8, Comment = "The best Movie Ever Must Watch", MovieId = 259693, Rating = 9.5f, UserId = 2},
+                new ReviewModel() {Id = 9, Comment = "Not Bad", MovieId = 691179, Rating = 6.5f, UserId = 2},
+                new ReviewModel() {Id = 10, Comment = "Good Movie", MovieId = 726684, Rating = 7.3f, UserId = 2}
+            );
         }
     }
 }
