@@ -59,8 +59,10 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #e0e6f0;
+    font-family: 'Nunito', sans-serif;
 }
 .footer {
   position: absolute;
@@ -69,3 +71,23 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+
+
+
+
+.card-body {
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.1);
+}
+
+.soc-med {
+    color: #d1c3e9;
+    text-decoration: none;
+}
+
+    .soc-med:hover {
+        color: black;
+        text-decoration: none;
+    }
+
+
