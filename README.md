@@ -1,23 +1,31 @@
-# Project02_EF_ASP.NET_MVC
+## Music Website
 
-<div dir="rtl" align="right">
-# فكرة المشروع 
-
-بناء مشروع ASP.NET MVC قائم على فكرة من اختيارك ويكون قادر على التعامل مع بيانات حقيقية باستخدام Entity Framework Core 
-
-# متطلبات المشروع
-- استخدام Entity Framework Core وربطها بقاعدة بيانات Database
-    - استخدام Migration وCodeFirst Approach
-    - إنشاء على الأقل ٤ جداول
-    - إضافة بيانات مبدئية على قاعدة البيانات `Seeding`
-    - استخدام مفهوم العلاقات بين الجداول
-    - عمل fetch استرجاع للبيانات
-# إضافة | Bouns  
-- عمل ٢ أو أكثر من وظائف CRUD على المشروع
-- التعامل مع React في المشروع بأستخدام الـ API
+## Technology used :
+* ASP.NET MVC 
+* Bootstrap 
+* MySQL
 
 
-# التسليم
+## Image :
 
-يوم الأحد June 6th، الساعة 9:00 am
-</div>
+## Home Page
+
+![alt text](https://res.cloudinary.com/duuconncq/image/upload/v1622919733/Screenshot_2021-06-05_215847_sxymna.png)
+
+### All Channel
+![alt text](
+https://res.cloudinary.com/duuconncq/image/upload/v1622919734/Screenshot_2021-06-05_215939_bcqwgk.png)
+
+### All Music Cards
+
+![alt text](https://res.cloudinary.com/duuconncq/image/upload/v1622919731/Screenshot_2021-06-05_215917_k1khdn.png)
+
+### One Music Card
+
+![alt text](https://res.cloudinary.com/duuconncq/image/upload/v1622919731/Screenshot_2021-06-05_220011_se3spf.png)
+
+### Error Page
+
+![alt text](https://res.cloudinary.com/duuconncq/image/upload/v1622919730/Screenshot_2021-06-05_220040_fbe5op.png)
+
+
