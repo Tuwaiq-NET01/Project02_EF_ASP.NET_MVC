@@ -1,0 +1,109 @@
+﻿@{
+    var planes = (List<PlaneModel>)ViewData["Planes"];
+    var passenegrs = (List<PassengerModel>)ViewData["Passenegrs"];
+    var countries = (List<CountryModel>)ViewData["Countries"];
+    var bags = (List<BagModel>)ViewData["Bags"];
+
+}
+<br /><br />
+<h2>Planes Table</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Airlines</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var i in planes)
+            {
+                <tr>
+                    <th scope="row">@i.Id</th>
+                    <td>@i.Name</td>
+                    <td>@i.Airlines</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<br /><br />
+<h2>Passengers Table</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col" style="color:red;">PlaneId</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var i in passenegrs)
+            {
+                <tr>
+                    <th scope="row">@i.Id</th>
+                    <td>@i.Name</td>
+                    <td>@i.Email</td>
+                    <td>@i.PhoneNum</td>
+                    <td style="color:red;">@i.PlaneId</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<br /><br />
+<h2>Countries Table</h2>
+<table class="table">
+
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Flag</th>
+            <th scope="col">Language</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var i in countries)
+            {
+                <tr>
+                    <th scope="row">@i.Id</th>
+                    <td>@i.Name</td>
+                    <td><img src="@i.Flag" width="200px" /></td>
+                    <td>@i.Language</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<br /><br />
+<h2>Bags Table</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Color</th>
+            <th scope="col">Size</th>
+            <th scope="col" style="color:red;">PassengerId</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var i in bags)
+            {
+                <tr>
+                    <th scope="row">@i.Id</th>
+                    <td>@i.Color</td>
+                    <td>@i.Size</td>
+                    <td style="color:red;">@i.PassengerId</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
