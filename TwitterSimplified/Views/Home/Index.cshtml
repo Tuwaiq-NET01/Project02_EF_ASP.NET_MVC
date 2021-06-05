@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Twitterify Page";
+    var tweets = (List<TweetModel>)ViewData["Tweets"];
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to twitterify</h1>
+    <h3>Today's tweet:</h3>
+
+    @foreach (var tweet in tweets)
+    {
+        <div class="card" style="width: 18rem; margin-top:1rem; margin:auto;">
+            <div class="card-body" style="background-color: #A8DADC">
+                <h5 class="card-title">Tweet id: @tweet.Id</h5>
+                <p style="background-color: #1D3557; color: #F1FAEE; padding:1rem ">@tweet.Content</p>
+            </div>
+        </div>
+    }
+</div>

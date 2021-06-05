@@ -1,0 +1,14 @@
+﻿@{ 
+    ViewData["Title"] = "Twitterify Search";
+
+}
+<div style="margin: auto; margin: 4rem;">
+    <h1 style="align-content:center">Search for username:</h1>
+
+    <form class="input-group mb-3" asp-action="Search" asp-controller="Searches">
+        <input name="txt" type="text" class="form-control" placeholder="username" aria-label="Search username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+        </div>
+    </form>
+</div>

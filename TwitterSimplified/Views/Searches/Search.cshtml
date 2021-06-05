@@ -1,0 +1,26 @@
+﻿@{
+    var userInfo = (List<UserModel>)ViewData["User"];
+
+    ViewData["Title"] = "Twitterify user profile";
+}
+
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">User Id</th>
+            <th scope="col">Username</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in userInfo)
+        {
+            <tr>
+                <th scope="row">@user.Id</th>
+                <td>@user.Username</td>
+                <td>@user.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
