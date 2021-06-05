@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace MovieApi.Models
 {
@@ -16,5 +17,8 @@ namespace MovieApi.Models
         public string imdb_id { get; set; }
         public int budget { get; set; }
         public int revenue { get; set; }
+        
+        // Relationship Movie - Reviews
+        public List<ReviewModel> Reviews { get; set; }
     }
 }
