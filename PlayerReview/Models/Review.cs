@@ -16,5 +16,6 @@ namespace PlayerReview.Models
         public int GameId { get; set; } //FK
         public Game Game { get; set; }
 
+
     }
 }

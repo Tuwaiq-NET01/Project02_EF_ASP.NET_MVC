@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "_myLayout";
+    var game = (Game)ViewData["game"];
+    var companies = (List<Company>)ViewData["companies"];
+    var users = (List<User>)ViewData["users"];
+    var reviews = (List<Review>)ViewData["reviews"];
+
+    var desc = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestiae voluptatibus officiis, autem quam tenetur explicabo minima a doloribus id soluta voluptates perspiciatis exercitationem ea cum inventore repellendus, accusamus odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur quisquam perspiciatis, veniam laboriosam officiis similique corrupti doloribus porro aut perferendis omnis quis. Officiis ea inventore modi aut ipsa deserunt.";
+}
+
+<br />
+
+<div class="row">
+    <div class="col-lg-4">
+        <img src="@game.Image" alt="book image" width="350px" />
+    </div>
+    <div class="col-8">
+        <br />
+        <h1>@game.GameName</h1>
+        <b>
+            Company:
+            @foreach (var comp in companies)
+            {
+                @if (comp.Id == game.CompanyId)
+                {
+                    <a href="/companies/detail/@comp.Id"> @comp.CompanyName</a>
+                }
+            }
+
+
+        </b>
+        <br />
+
+        <p>@desc</p>
+        <a class="btn btn-secondary" href="/games" role="button">Go Back</a>
+    </div>
+</div>
+
+<hr />
+
+<h1> REVIEWS: </h1>
+
+<div class="list-group">
+
+    @foreach (var rev in reviews)
+    {
+
+        <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">@rev.Title</h5>
+            </div>
+            @foreach(var user in users)
+                {
+                @if(rev.Id == user.Id)
+                    {
+
+                    }
+                }
+            <p class="mb-1">@rev.Description</p>
+        </div>
+    }
+</div>
+
+

@@ -38,19 +38,30 @@ namespace PlayerReview.Data
 
 
 
-
-
             //seeding review
             modelBuilder.Entity<Review>().HasData(new Review { Id = 1, Title = "Great Game!", Description = desc, GameId = 3 });
-            modelBuilder.Entity<Review>().HasData(new Review { Id = 2, Title = "Extremely fun Game!", Description = desc, GameId = 4 });
-            modelBuilder.Entity<Review>().HasData(new Review { Id = 3, Title = "Amazing Visuals!", Description = desc, GameId = 5 });
-            modelBuilder.Entity<Review>().HasData(new Review { Id = 4, Title = "Not that good...", Description = desc, GameId = 6 });
-            modelBuilder.Entity<Review>().HasData(new Review { Id = 5, Title = "Boring.", Description = desc, GameId = 6 });
-            modelBuilder.Entity<Review>().HasData(new Review { Id = 6, Title = "Very good.", Description = desc, GameId = 3 });
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 2, Title = "Extremely fun Game!", Description = desc, GameId = 4});
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 3, Title = "Amazing Visuals!", Description = desc, GameId = 5});
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 4, Title = "Not that good...", Description = desc, GameId = 6});
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 5, Title = "Boring.", Description = desc, GameId = 6});
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 6, Title = "Very good.", Description = desc, GameId = 3});
             modelBuilder.Entity<Review>().HasData(new Review { Id = 7, Title = "Great Game!", Description = desc, GameId = 7 });
             modelBuilder.Entity<Review>().HasData(new Review { Id = 8, Title = "Great Game!", Description = desc, GameId = 1 });
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 9, Title = "Very great game", Description = desc, GameId = 4 });
+            modelBuilder.Entity<Review>().HasData(new Review { Id = 10, Title = "I had so much fun!", Description = desc, GameId = 4 });
 
 
+            //seeding user
+            modelBuilder.Entity<User>().HasData(new User { Id = 1, Username = "Jake", Password="123", Email = "User@example.com", ReviewId= 1});
+            modelBuilder.Entity<User>().HasData(new User { Id = 2, Username = "John", Password="123", Email = "User@example.com", ReviewId = 2});
+            modelBuilder.Entity<User>().HasData(new User { Id = 3, Username = "Drake", Password="123", Email = "User@example.com", ReviewId = 3 });
+            modelBuilder.Entity<User>().HasData(new User { Id = 4, Username = "Michael", Password="123", Email = "User@example.com", ReviewId = 4 });
+            modelBuilder.Entity<User>().HasData(new User { Id = 5, Username = "Paul", Password="123", Email = "User@example.com", ReviewId = 5 });
+            modelBuilder.Entity<User>().HasData(new User { Id = 6, Username = "Jack", Password="123", Email = "User@example.com", ReviewId = 6 });
+            modelBuilder.Entity<User>().HasData(new User { Id = 7, Username = "Jake", Password="123", Email = "User@example.com", ReviewId = 7 });
+            modelBuilder.Entity<User>().HasData(new User { Id = 8, Username = "Robert", Password="123", Email = "User@example.com", ReviewId = 8 });
+            modelBuilder.Entity<User>().HasData(new User { Id = 9, Username = "Jake", Password="123", Email = "User@example.com", ReviewId = 9 });
+            modelBuilder.Entity<User>().HasData(new User { Id = 10, Username = "Jimmy", Password="123", Email = "User@example.com", ReviewId = 10 });
 
         }
 

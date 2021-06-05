@@ -1,20 +1,19 @@
-﻿@{
+﻿
+@{
     Layout = "_myLayout";
 
-
-    var games = (List<Game>)ViewData["games"];
-    var companies = (List<Company>)ViewData["companies"];
+    var searchRes = (List<Game>)ViewData["searchRes"];
+    var target = (string)ViewData["target"];
 }
+<br />
 
-
-
-<h3 class="display-4 my-2">All Games</h3>
+<h1>SEARCH RESULTS FOR: @target </h1>
 
 <hr />
 
 <div class="row">
 
-    @foreach (var game in games)
+    @foreach (var game in searchRes)
     {
 
         <div class="col-md-3 mb-5">
@@ -29,19 +28,6 @@
 
                 <div class="card-body">
                     <h5 class="card-title">@game.GameName</h5>
-                    <b>
-                        Company:
-                        @foreach (var comp in companies)
-                        {
-                            @if (comp.Id == game.CompanyId)
-                            { 
-                                <a href="/companies/details/@comp.Id"> @comp.CompanyName</a>
-                            }
-                        }
-
-
-                    </b>
-                    @*<p class="card-text text-right price-tag">$@game.price</p>*@
                     <div class="text-center">
                         <a href="/games/details/@game.Id" class="btn btn-primary ">
                             More INFO
@@ -53,4 +39,4 @@
 
         </div>
     }
-    </div>
+</div>

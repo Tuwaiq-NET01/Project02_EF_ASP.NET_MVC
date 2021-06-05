@@ -143,3 +143,8 @@ C:\Users\moham\Desktop\proj2\PlayerReview\PlayerReview\obj\Debug\net5.0\Razor\Pa
 C:\Users\moham\Desktop\proj2\PlayerReview\PlayerReview\obj\Debug\net5.0\Razor\Views\Shared\_myLayout.cshtml.g.cs
 C:\Users\moham\Desktop\proj2\PlayerReview\PlayerReview\bin\Debug\net5.0\libman.json
 C:\Users\moham\Desktop\proj2\PlayerReview\PlayerReview\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\moham\Desktop\proj2\PlayerReview\PlayerReview\obj\Debug\net5.0\Razor\Views\Games\Details.cshtml.g.cs
+C:\Users\moham\Desktop\proj2\PlayerReview\PlayerReview\obj\Debug\net5.0\Razor\Views\Companies\Index.cshtml.g.cs
+C:\Users\moham\Desktop\proj2\PlayerReview\PlayerReview\obj\Debug\net5.0\Razor\Views\Companies\Details.cshtml.g.cs
+C:\Users\moham\Desktop\proj2\PlayerReview\PlayerReview\obj\Debug\net5.0\Razor\Views\Shared\fof.cshtml.g.cs
+C:\Users\moham\Desktop\proj2\PlayerReview\PlayerReview\obj\Debug\net5.0\Razor\Views\Games\Search.cshtml.g.cs
