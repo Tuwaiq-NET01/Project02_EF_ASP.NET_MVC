@@ -1,0 +1,38 @@
+﻿@page
+@{
+    var data = (List<CarModel>)ViewBag.Data;
+}
+<h4>Cars </h4>
+<div class="row d-flex justify-content-center">
+    <div class="container bg-light p-5 mb-2 rounded ">
+        <div class="col-md-12">
+            <table id="myTable" class="table">
+                <thead class="bg-dark text-light">
+                    <tr>
+                        <th width="200">Manufacturer</th>
+                        <th>Model</th>
+                        <th width="150">Type</th>
+                        <th width="150">Color</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in data)
+                    {
+                    <tr>
+                        <td>@item.Manufacturer</td>
+                        <td>@item.Model</td>
+                        <td>@item.Type</td>
+                        <td>@item.color</td>
+                    </tr>
+
+                    }
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
