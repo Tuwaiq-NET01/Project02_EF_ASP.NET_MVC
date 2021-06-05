@@ -1,6 +1,6 @@
 # Project02_EF_ASP.NET_MVC
 
-<div dir="rtl" align="right">
+
 # I have compound website
     thats provide services and some events to the customer.
     
@@ -13,7 +13,7 @@
     To be honest i learned alot still didn't start with api and the crud operations.
     
     
-    
+<div dir="rtl" align="right">    
 بناء مشروع ASP.NET MVC قائم على فكرة من اختيارك ويكون قادر على التعامل مع بيانات حقيقية باستخدام Entity Framework Core 
 
 # متطلبات المشروع
