@@ -1,0 +1,104 @@
+﻿@{
+    var Characters = (List<Character>)ViewData["Characters"];
+    var CharacterStatus = (List<CharacterStatus>)ViewData["CharacterStatus"];
+    var Users = (List<User>)ViewData["Users"];
+    var UserFavorites = (List<UserFavorite>)ViewData["UserFavorites"];
+}
+
+<h1>Characters Table</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Characters)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                @*<td>@item.StatusId</td>*@
+                <td>@item.Status.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br />
+<br />
+<br />
+
+<h1>Character Status Table</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in CharacterStatus)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br />
+<br />
+<br />
+
+<h1>Users Table</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Users)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br />
+<br />
+<br />
+
+<h1>User Favorites Table</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>User Name</th>
+            <th>Characters</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in UserFavorites)
+        {
+            <tr>
+                <td>@item.User.Id</td>
+                <td>@item.User.Name</td>
+                <td>@{
+                    var chars = new string[item.User.UserFavorites.Count];
+                    for (int i = 0; i < chars.Length; i++) chars[i] = item.User.UserFavorites[i].Character.Name;
+                    var charsString = string.Join(',', chars);
+                }
+                @charsString</td>
+            </tr>
+        }
+    </tbody>
+</table>
