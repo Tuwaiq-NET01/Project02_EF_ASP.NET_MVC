@@ -1,0 +1,25 @@
+﻿@{
+    var Departments = (List<DepartmentModel>)ViewData["Departments"];
+}
+
+<h1>This is Departments Index</h1>
+
+<table>
+    <thead>
+        <tr>
+            <td> ID: </td>
+            <td> Name: </td>
+            <td> Location: </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dep in Departments)
+        {
+            <tr>
+                <td>@dep.Id</td>
+                <td>@dep.Name</td>
+                <td>@dep.Location</td>
+            </tr>
+        }
+    </tbody>
+</table>

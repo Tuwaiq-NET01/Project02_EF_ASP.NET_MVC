@@ -1,0 +1,25 @@
+﻿@{
+    var Medications = (List<MedicationModel>)ViewData["Medications"];
+}
+
+<h1>This is Medications Index</h1>
+
+<table>
+    <thead>
+        <tr>
+            <td> ID: </td>
+            <td> Name: </td>
+            <td> Brand: </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var med in Medications)
+        {
+            <tr>
+                <td>@med.Id</td>
+                <td>@med.Name</td>
+                <td>@med.Brand</td>
+            </tr>
+        }
+    </tbody>
+</table>

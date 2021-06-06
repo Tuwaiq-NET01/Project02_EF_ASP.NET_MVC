@@ -1,0 +1,34 @@
+﻿@{
+    var Doctors = (List<DoctorModel>)ViewData["Doctors"];
+}
+
+<h1>This is Doctors Index</h1>
+
+<table>
+    <thead>
+        <tr>
+            <td> ID: </td>
+            <td> First Name: </td>
+            <td> Last Name: </td>
+            <td> Department: </td>
+            <td> Department ID: </td>
+            <td> Email: </td>
+            <td> Phone Number: </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var doctor in Doctors)
+        {
+        <tr>
+            <td>@doctor.Id</td>
+            <td>@doctor.FirstName</td>
+            <td>@doctor.LastName</td>
+            <td>@doctor.Department</td>
+            <td>@doctor.DepartmentId</td>
+            <td>@doctor.Email</td>
+            <td>@doctor.PhoneNumber</td>
+
+        </tr>
+        }
+    </tbody>
+</table>

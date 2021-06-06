@@ -1,0 +1,25 @@
+﻿@{
+    var DoctorsPatients = (List<Doctor_Patient_Model>)ViewData["DoctorsPatients"];
+}
+
+<h1>This is the Doctor and Patient Index</h1>
+
+<table>
+    <thead>
+        <tr>
+            <td> ID: </td>
+            <td> Doctor ID: </td>
+            <td> Patient ID: </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dp in DoctorsPatients)
+        {
+            <tr>
+                <td>@dp.Id</td>
+                <td>@dp.DoctorId</td>
+                <td>@dp.PatientId</td>
+            </tr>
+        }
+    </tbody>
+</table>
