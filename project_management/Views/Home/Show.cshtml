@@ -1,0 +1,73 @@
+@{
+    var deps = (List<Departement>)ViewBag.deps;
+    var emps = (List<Employee>)ViewBag.emps;
+    var projects = (List<Project>)ViewBag.projects;
+    var tasks = (List<project_management.Models.Task>)ViewBag.tasks;
+}
+<h4>Departements</h4>
+<table class="table">
+    <th> Id </th>
+    <th> Name </th>
+@foreach (var dep in deps)
+{
+    <tr>
+        <td> @dep.Id</td>
+        <td> @dep.Name</td>
+    </tr>
+}
+</table>
+
+<h4>Employees</h4>
+<table class="table">
+    <th> Id </th>
+    <th> First Name </th>
+    <th> Last Name </th>
+    <th> Email </th>
+    <th> Departement </th>
+@foreach (var emp in emps)
+{
+    <tr>
+        <td> @emp.Id</td>
+        <td> @emp.FirstName</td>
+        <td> @emp.LastName</td>
+        <td> @emp.Email</td>
+        <td> @emp.DepId</td>
+    </tr>
+}
+</table>
+
+<h4>Projects</h4>
+<table class="table">
+    <th> Id </th>
+    <th> Name </th>
+    <th> Project Manager </th>
+    <th> Departement </th>
+    <th> Description </th>
+@foreach (var project in projects)
+{
+    <tr>
+        <td> @project.Id</td>
+        <td> @project.Name</td>
+        <td> @project.ProjectMgrId </td>
+        <td> @project.DepId </td>
+        <td> @project.Description </td>
+    </tr>
+}
+</table>
+
+<h4>Tasks</h4>
+<table class="table">
+    <th> Id </th>
+    <th> Employee </th>
+    <th> Project </th>
+    <th> Description </th>
+@foreach (var task in tasks)
+{
+    <tr>
+        <td> @task.Id</td>
+        <td> @task.EmpId </td>
+        <td> @task.ProjectId </td>
+        <td> @task.Description </td>
+    </tr>
+}
+</table>
