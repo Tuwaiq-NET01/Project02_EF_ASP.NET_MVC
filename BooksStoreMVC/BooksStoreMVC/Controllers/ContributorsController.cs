@@ -22,8 +22,7 @@ namespace BooksStoreMVC.Controllers
 
         public IActionResult Index()
         {
-            var searchByID = _db.Contributors.FirstOrDefault(Contributors => Contributors.ConID == 1);
-            ViewBag.SearchByID = searchByID;
+ 
 
             var DbContributors = _db.Contributors.ToList();
             ViewBag.Contributors = DbContributors;
