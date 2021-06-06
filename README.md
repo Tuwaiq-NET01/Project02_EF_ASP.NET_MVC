@@ -1,23 +1,19 @@
-# Project02_EF_ASP.NET_MVC
 
-<div dir="rtl" align="right">
-# فكرة المشروع 
+# Dotnet second project
+- This project is for education purpose. How to build MVC project dealing with data using Entity Framework Core .
+- project idea : build a website that can help the tourists to planing thier trips .
 
-بناء مشروع ASP.NET MVC قائم على فكرة من اختيارك ويكون قادر على التعامل مع بيانات حقيقية باستخدام Entity Framework Core 
+ 
+## Project using  :
+-  Migration & odeFirst Approach
+- Create four tables
+- Seeding tables
+- Apply Relations btween tables
+- Fetch data from DB
 
-# متطلبات المشروع
-- استخدام Entity Framework Core وربطها بقاعدة بيانات Database
-    - استخدام Migration وCodeFirst Approach
-    - إنشاء على الأقل ٤ جداول
-    - إضافة بيانات مبدئية على قاعدة البيانات `Seeding`
-    - استخدام مفهوم العلاقات بين الجداول
-    - عمل fetch استرجاع للبيانات
-# إضافة | Bouns  
-- عمل ٢ أو أكثر من وظائف CRUD على المشروع
-- التعامل مع React في المشروع بأستخدام الـ API
+## DB digram :
 
+![Blank diagram](https://user-images.githubusercontent.com/82523761/120910627-0fa19900-c689-11eb-9e99-3bf7d9e5335f.png)
 
-# التسليم
-
-يوم الأحد June 6th، الساعة 9:00 am
-</div>
+<img width="1440" alt="Screen Shot 1442-10-25 at 5 39 28 AM" src="https://user-images.githubusercontent.com/82523761/120910703-9ce4ed80-c689-11eb-8886-de092c29b634.png">
+ 
