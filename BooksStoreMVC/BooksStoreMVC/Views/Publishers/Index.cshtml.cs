@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace BooksStoreMVC.Views.Book
+namespace BooksStoreMVC.Views.Books
 {
     public class IndexModel : PageModel
     {
