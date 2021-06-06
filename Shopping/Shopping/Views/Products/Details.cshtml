@@ -1,0 +1,35 @@
+﻿<h1>Products</h1>
+
+@{
+    var products = (List<ProductModel>)ViewData["Details"];
+}
+
+<form class="form-inline my-3" asp-action="Details" asp-controller="Products">
+    <input class="form-control mr-sm-2" typeof="ID" name="id" placeholder="Please Enter Product ID" aria-label="" />
+    <button class="btn btn-outline-success my-2" type="submit">Get by ID</button>
+</form>
+
+<h5>Students:</h5>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Brand</td>
+            <td>Price</td>
+            <td>Image</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in products)
+        {
+        <tr>
+            <td>@product.id</td>
+            <td>@product.name</td>
+            <td>@product.brand</td>
+            <td>@product.price</td>
+            <td><image height="200" src=@product.image></image></td>
+        </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,29 @@
+﻿@{
+    var products = (List<ProductModel>)ViewData["Search"];
+}
+
+<h5>Products:</h5>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>FirstName</td>
+            <td>LastName</td>
+            <td>Email</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in products)
+        {
+        <tr>
+            <td>@product.id</td>
+            <td>@product.name</td>
+            <td>@product.brand</td>
+            <td>@product.price</td>
+            <td><image height="200" src=@product.image></image></td>
+        </tr>
+        }
+    </tbody>
+</table>
+@{
+}
