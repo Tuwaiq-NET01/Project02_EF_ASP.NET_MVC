@@ -21,9 +21,7 @@ namespace BooksStoreMVC.Controllers
 
         public IActionResult Index()
         {
-            var searchByID = _db.Authers.FirstOrDefault(Authers => Authers.AuthId == 1);
-            ViewBag.SearchByID = searchByID;
-
+           
             var DbAuthers = _db.Authers.ToList();
             ViewBag.Authers = DbAuthers;
             return View();
