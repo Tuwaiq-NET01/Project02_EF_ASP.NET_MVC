@@ -1,0 +1,41 @@
+﻿@{
+    Layout = "WebLayout";
+}
+<div>
+    <div class="bg">
+        <div class="row">
+            <div class="col">
+                <div class="content" style="max-width:650px">
+                    <img class="mySlides" src="https://images.unsplash.com/photo-1537225228614-56cc3556d7ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80" style="width:100%">
+                    <img class="mySlides" src="https://images.unsplash.com/photo-1489275259429-70f6ef5705c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MnwzOTQ0MDQ1OXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60" style="width:100%">
+                    <img class="mySlides" src="https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wzNzkzMTMyfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" style="width:100%">
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <h1 class="topheader">Safe . Ready . Open .</h1>
+                    <h1 class="downheader">
+                        find your next destination  <button type="button" class="btn btn-outline-light"><a href="/Destinations">Here</a></button>
+                    </h1>
+                </div>
+            </div>
+    </div>
+</div>
+
+<script>var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000);
+    }</script>
+
+
+

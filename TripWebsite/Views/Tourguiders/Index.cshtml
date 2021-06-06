@@ -1,0 +1,31 @@
+﻿
+@{
+    var Tourguiders = (List<TourguidersModel>)ViewData["Tourguiders"];
+    Layout = "WebLayout";
+
+}
+
+<div class="container">
+    <div class="row bg">
+        <h1 class="topheader2">how to take trip with . .</h1>
+    </div>
+    <div class="row">
+        @foreach (var Tourguider in Tourguiders)
+        {
+            <div class="clo-sm-2">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="@Tourguider.Img" style="width:500px;height:450px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>@Tourguider.Name</h1>
+                            <p>@Tourguider.About</p>
+                            <p>Phone number:@Tourguider.PhoneNumber</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

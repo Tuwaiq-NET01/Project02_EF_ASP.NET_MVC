@@ -1,0 +1,27 @@
+﻿
+@{
+    var Destinations = (List<DestinationsModel>)ViewData["Destinations"];
+     Layout = "WebLayout";
+
+}
+<div class="container">
+   
+        <div class="row bg">
+            <h1 class="topheader2">Explore The city . .</h1>
+        </div>
+
+            <div class="row">
+                @foreach (var Destination in Destinations)
+                {
+                    <div class="clo">
+                        <div class="oneDestination">
+                            <p class="text-center" id="name">@Destination.Name</p>
+                            <p class="text-center">@Destination.BriefInformation</p>
+                            <p class="text-center">@Destination.Date  | @Destination.Price $</p>
+                            <img class="img" src="@Destination.Img">
+                            <hr />
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
