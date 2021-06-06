@@ -1,0 +1,18 @@
+@page
+@model BooksStoreMVC.Views.Contributors.IndexModel
+@{
+    var Contributors = (List<ContributorModel>)ViewBag.Contributors;
+
+
+}
+
+@foreach (var Con in Contributors)
+{
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">@Con.ConID</h5>
+            <p class="card-text">@Con.ConName | @Con.ConPhone</p>
+        </div>
+    </div>
+}
