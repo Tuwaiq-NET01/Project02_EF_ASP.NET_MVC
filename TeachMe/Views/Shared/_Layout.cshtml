@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - TeachMe</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>        .course-grid {
+            grid-template-columns: 1fr 1fr;
+            max-width: 995px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <!-- Google-fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kameron:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Fonts-style -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Fonts-style -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Modal-Effect -->
+    <link href="css/component.css" rel="stylesheet">
+    <!-- owl-carousel -->
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- Template Styles-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Template Color-->
+    <link rel="stylesheet" type="text/css" href="css/green.css" media="screen" id="color-opt" />
+
+</head>
+<body data-spy="scroll" data-offset="80" style="align-content:center;">
+    
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TeachMe</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                      @*  <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="LoginPage.cshtml"> @ViewData["login"]Login </a>
+                        </li>*@
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Course" asp-action="Index"> Courses </a>
+                        </li>
+                        @*<li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="Index"> Category </a>
+                            </li>*@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="TeamMember" asp-action="Index"> Team Members </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="ContactUs" asp-action="Index"> Contact Us </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted  course-grid" style="height:min-content">
+        <div class="container">
+            <div class="pagination" style="align-content:center">
+                <a href="#">&laquo;</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Course" asp-action="Index"> Courses </a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="TeamMember" asp-action="Index"> Team Members </a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="ContactUs" asp-action="Index"> Contact Us </a>
+                <a href="#">&raquo;</a>
+            </div>
+
+            &copy; 2021 - TeachMe - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
