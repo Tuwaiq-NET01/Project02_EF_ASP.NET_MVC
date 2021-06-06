@@ -1,0 +1,44 @@
+﻿
+@{
+    var instructors = (List<InstructorModel>)ViewData["instructor"];
+}
+
+<h1>This is Instructors Index</h1>
+
+<table class"table">
+    <thead class="thead-ligh">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Full Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+
+
+
+        @foreach (var i in instructors)
+
+        {
+            <tr>
+                <td>@i.Id </td>
+                <td>@i.FullName </td>
+                <td>@i.PhoneNum </td>
+                <td>@i.Email</td>
+                <td><button class="btn"><a href="/studetns/instructordetails/@i.Id">details</a></button></td>
+            </tr>
+        }
+
+
+
+
+
+    </tbody>
+
+
+</table>
+

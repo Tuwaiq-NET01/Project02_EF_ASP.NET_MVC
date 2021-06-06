@@ -1,0 +1,42 @@
+﻿
+@{
+    var Students = (List<StudentModel>)ViewData["Students"];
+}
+
+<h1>This is Students Index</h1>
+
+<table class"table">
+    <thead class="thead-ligh">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Full Name</th>
+            <th>Email</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        
+       
+
+        @foreach (var student in Students)
+        
+            {
+            <tr>
+            <td>@student.Id </td>
+            <td>@student.FullName </td>
+            <td>@student.Email </td>
+            <td><button class="btn"><a href="/studetns/details/@student.Id">details</a></button></td>
+            </tr>
+            }
+      
+
+       
+         
+
+        </tbody>
+
+
+    </table>
+
