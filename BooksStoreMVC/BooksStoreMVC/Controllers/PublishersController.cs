@@ -22,8 +22,7 @@ namespace BooksStoreMVC.Controllers
 
         public IActionResult Index()
         {
-            var searchByID = _db.Publishers.FirstOrDefault(publisher => publisher.PubId == 2);
-            ViewBag.SearchByID = searchByID;
+           
 
             var DbPublishers = _db.Publishers.ToList();
             ViewBag.Publishers = DbPublishers;
