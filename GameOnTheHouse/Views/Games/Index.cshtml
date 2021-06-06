@@ -1,0 +1,71 @@
+﻿@{
+    var games = (List<Game>)ViewData["Games"];
+}
+
+
+<style>
+    .GameContainer {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .GameComp {
+        @*position: absolute;*@
+        display: flex;
+        margin: 10px;
+    }
+    .GameDetail {
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+</style>
+@*<div class="card-group">*@
+
+<div class="row row-cols-1 row-cols-md-2 g-4 GameContainer">
+
+    @foreach (var game in games)
+    {
+        <div class="col-3 GameComp">
+            <div class="card  w-850">
+                @*<div class="card-body">*@
+                @*<div>*@
+                <div class="row no-gutters bg-light position-relative" style="align-items:center">
+
+                    <img src=@game.Thumbnail class="card-img-top" alt="...">
+                    <div class="card-img-overlay" style="align-content:center;  vertical-align: middle" ;>
+                        <a href="/GameDetails/Index/@game.Id" class="stretched-link"></a>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title"> @game.Title </h5>
+                    <p class="card-text"> @game.ShortDcrp</p>
+                    @*<p class="card-text"><small class="text-muted">   </small></p>*@
+                    <a href=@game.GameUrl class="btn btn-outline-success" style="width:80px;height:25px;position: absolute;left: 45%;top: 90%;">
+                    <div class="GameDetail">
+                    Play
+                    </div>
+                    </a>
+
+                    <form action="/FavoriteGames/Favorite?userId=77&gameId=@game.Id" method="post">
+                        <button type="submit" class="btn btn-outline-danger" style="width:25px;height:25px;position: absolute;left: 80%;top: 90%;">
+                        <div class="GameDetail">
+                            ❤︎
+                            </div>
+                        </button>
+                        @*<button type="submit" class="btn btn-outline-danger">❤︎</button>*@
+                        @*<a class="btn btn-outline-danger" style="width:25px;height:25px;position: absolute;left: 80%;top: 90%;">❤︎</a>*@
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+    }
+</div>

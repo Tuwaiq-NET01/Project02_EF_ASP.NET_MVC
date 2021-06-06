@@ -1,0 +1,52 @@
+﻿<Properties StartupConfiguration="{B5C674FD-560B-456A-B805-458753B3A2B4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/FavoriteGamesController.cs">
+    <Files>
+      <File FileName="Views/UserAccounts/Index.cshtml" Line="7" Column="1" />
+      <File FileName="Views/UserAccounts/EditAccount.cshtml" />
+      <File FileName="Views/Games/Index.cshtml" />
+      <File FileName="Views/FavoriteGames/Index.cshtml" />
+      <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Views/Home/Index.cshtml" />
+      <File FileName="Views/Shared/_Layout.cshtml" />
+      <File FileName="Views/Shared/_LayoutHomePage.cshtml" Line="37" Column="32" />
+      <File FileName="Views/UserAccounts/SignIn.cshtml" />
+      <File FileName="Views/GameDetails/Index.cshtml" />
+      <File FileName="appsettings.json" Line="3" Column="105" />
+      <File FileName="Models/FavoriteGame.cs" Line="1" Column="1" />
+      <File FileName="Controllers/GameDetailsController.cs" Line="27" Column="10" />
+      <File FileName="Controllers/GamesController.cs" Line="25" Column="44" />
+      <File FileName="Controllers/UserAccountsController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/UserController.cs" Line="23" Column="10" />
+      <File FileName="Controllers/FavoriteGamesController.cs" Line="30" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GameOnTheHouse" expanded="True">
+            <Node name="GameOnTheHouse" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="FavoriteGamesController.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="FavoriteGames" expanded="True" />
+                <Node name="GameDetails" expanded="True" />
+                <Node name="Games" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="User" expanded="True" />
+                <Node name="UserAccounts" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.GameOnTheHouse PreferredExecutionTarget="/Applications/Firefox.app" />
+</Properties>
