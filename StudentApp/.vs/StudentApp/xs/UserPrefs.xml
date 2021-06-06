@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{9DD53EE3-3DA9-476B-A03A-C7B033A50649}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="StudentApp/Controllers/StudentController.cs">
+    <Files>
+      <File FileName="StudentApp/Controllers/StudentController.cs" Line="41" Column="28" />
+      <File FileName="StudentApp/Data/AppDbContext.cs" Line="72" Column="74" />
+      <File FileName="StudentApp/Controllers/WeatherForecastController.cs" />
+      <File FileName="StudentApp/Controllers/QuestionController.cs" Line="30" Column="29" />
+      <File FileName="StudentApp/Startup.cs" />
+      <File FileName="StudentApp/Program.cs" Line="16" Column="1" />
+      <File FileName="StudentApp/Migrations/20210605231318_create-table-with-more-data-seeding.cs" />
+      <File FileName="StudentApp/Models/Question.cs" Line="4" Column="26" />
+      <File FileName="StudentApp/Migrations/20210606022521_create-table-with-more-data-seeding2.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="StudentApp" expanded="True">
+            <Node name="StudentApp" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="StudentController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.StudentApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
