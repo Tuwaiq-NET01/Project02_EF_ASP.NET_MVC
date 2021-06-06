@@ -1,0 +1,114 @@
+/* html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  vertical-align: middle;
+} */
+/*
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+.card {
+  border-radius:0;
+  margin:10px auto;
+}
+.card-title {
+text-transform: uppercase;
+color: #E44424;
+}
+
+.card-text {
+margin-top:10px;
+margin-bottom: 10px;
+background-color:#FFFFFF;
+color:#000000;
+}
+a.btn, a.btn:visited {
+  color:#333333;
+}
+hr {
+margin-top: 1rem;
+margin-bottom: 1rem;
+border: 0;
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar{
+
+  background-color:#00798A ;
+}
+
+.btn{
+  background-color: #0D2E41;
+}
+
+
+
+
+
+
+/*---------------------------------------------------------------------------*/
+
+.imgg:hover {
+  animation: shake 0.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+
+
+
+
+
+
+.dialogbox .dbody {
+	position: relative;
+	max-width: 300px;
+	height: auto;
+	margin: 20px 10px;
+	padding: 5px;
+	padding-left: 20px;
+	background-color: #DADADA;
+	border-radius: 3px;
+	border: 5px solid #ccc;
+  }
+
+  .tip {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	background: transparent;
+	border: 10px solid #ccc;
+  }
+
+  .tip-up {
+	top: -25px; /* Same as body margin top + border */
+	left: 10px;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-top-color: transparent;
+  }
