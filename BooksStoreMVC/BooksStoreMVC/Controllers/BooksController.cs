@@ -23,9 +23,7 @@ namespace BooksStoreMVC.Controllers
 
         public IActionResult Index()
         {
-            var searchByID = _db.Books.FirstOrDefault(Books => Books.ISBN == 1234);
-            ViewBag.SearchByID = searchByID;
-
+          
             var DbBooks = _db.Books.ToList();
             ViewBag.Books = DbBooks;
             return View();
