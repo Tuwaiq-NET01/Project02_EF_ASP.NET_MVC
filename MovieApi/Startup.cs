@@ -57,7 +57,7 @@ namespace MovieApi
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=movies}/{action=Movies}/{id?}");
+                    pattern: "{controller=home}/{action=Index}/{id?}");
             });
         }
     }
