@@ -1,0 +1,50 @@
+﻿@{
+
+
+    var TeamMemberModels=(List<TeamMemberModel>)ViewData["_TeamMember"];
+
+
+}
+
+
+<h1 style="align-content:baseline;"> Teme Members </h1>
+
+
+<div class="card-group">
+    @foreach (var TeamMember in Model)
+    {
+        <div class=" container row gy-5 col-6 p-3 ">
+            <div class="col-sm-6">
+                <div class="card" style=" width: 20rem;">
+                    <img src="@TeamMember.Member_Image" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> @TeamMember.Member_Name</h5>
+                        <p class="card-text"> @TeamMember.About_Member </p>
+                        <a href="~/TeamMember/Index/@TeamMember.Member_ID" class="btn btn-primary"> Contact </a>
+                    </div>
+                </div>
+            </div>
+      </div>
+    }
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

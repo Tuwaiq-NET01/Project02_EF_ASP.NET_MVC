@@ -1,0 +1,47 @@
+﻿@{
+    var CourseModels = (List<CourseModel>)ViewData["_Course"];
+    
+
+}
+<h1 style="align-content:baseline;"> Coures </h1>
+
+
+<div class="card-group"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @foreach (var Course in Model)
+    {
+        <div class=" container row gy-5 col-6 p-3 ">
+            <div class="col-sm-4">
+                <div class="card" style="width:25rem;">
+                    <img src="@Course.Course_Image" class="card-img-top" alt="..." style="height:265px;width:398px;">
+                    <div class="card-body">
+                        <h5 class="card-title"> @Course.Course_Name</h5>
+                        <h5 class="card-title"> @Course.Course_Category</h5>
+                                                <p class="card-text"> @Course.Course_Description @Course.Cours_Start_Date@* @Course.Coures_End_Date *@ </p>
+                        <a href="~/Coures/Index/@Course.Course_ID" class="btn btn-primary"> Let's started </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+﻿@{
+    var CategoryModels = (List<CategoryModel>)ViewData["_Category"];
+
+}
+
+
+<h1 style="align-content:baseline;background-color:aliceblue"> Category </h1>
+
+
+<div class="card-group ">
+    @foreach (var Category in Model)
+    {
+    <div class=" container row gy-5 col-6 p-3 " >
+        <div class="col-sm-4">
+            <div class="card" style="width:25rem;">
+                <img src="@Category.Category_Image" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> @Category.Category_Name</h5>
+                    <p class="card-text"> @Category.Category_Description  Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="~/Category/Index/@Category.Category_ID" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    }
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
