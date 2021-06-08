@@ -1,6 +1,6 @@
 # Project02_EF_ASP.NET_MVC
 
-
+<div dir="rtl" align="right">
 # فكرة المشروع 
 
 بناء مشروع ASP.NET MVC قائم على فكرة من اختيارك ويكون قادر على التعامل مع بيانات حقيقية باستخدام Entity Framework Core 
@@ -20,3 +20,4 @@
 # التسليم
 
 يوم الأحد June 6th، الساعة 9:00 am
+</div>
